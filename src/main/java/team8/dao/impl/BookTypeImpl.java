@@ -72,4 +72,23 @@ public class BookTypeImpl implements BookTypeDAO {
         return "删除成功 教科书类型为：" + string;
     }
 
+    public String update(String old, String newT) {
+        Connection connection = JDBCUtil.getConnection();
+
+        try {
+            ps=connection.prepareStatement("UPDATE BookType SET BookType =? WHERE BookType =?");
+            ps.setString(1,newT);
+            ps.setString(2,old);
+            ps.execute();
+        }catch (Exception e){
+            return "无法修改";
+        }
+
+
+
+
+        return "修改成功";
+
+    }
+
 }

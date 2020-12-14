@@ -20,5 +20,7 @@ public interface BookTypeDAO {
      */
     public String del(String string);
 
+    public String update(String old,String newT);
+
 
 }

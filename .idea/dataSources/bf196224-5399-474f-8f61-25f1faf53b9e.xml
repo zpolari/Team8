@@ -826,220 +826,228 @@
     <column id="211" parent="203" name="UnionID">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="212" parent="203" name="ClassName">
       <Position>2</Position>
       <DataType>varchar(48)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="213" parent="203" name="CourseName">
       <Position>3</Position>
       <DataType>varchar(64)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="214" parent="203" name="CTC">
+    <column id="214" parent="203" name="ISBN">
+      <Position>4</Position>
+      <DataType>varchar(64)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="215" parent="203" name="CTC">
       <ColNames>UnionID
 ClassName
 CourseName</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="215" parent="203" name="fk_CTC_Class_1">
+    <index id="216" parent="203" name="fk_CTC_Class_1">
       <ColNames>ClassName</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="216" parent="203" name="fk_CTC_Course_1">
+    <index id="217" parent="203" name="fk_CTC_Course_1">
       <ColNames>CourseName</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="217" parent="203" name="CTC">
+    <key id="218" parent="203" name="CTC">
       <ColNames>UnionID
 ClassName
 CourseName</ColNames>
       <UnderlyingIndexName>CTC</UnderlyingIndexName>
     </key>
-    <foreign-key id="218" parent="203" name="fk_CTC_Teacher_1">
+    <foreign-key id="219" parent="203" name="fk_CTC_Teacher_1">
       <ColNames>UnionID</ColNames>
       <RefTableName>Teacher</RefTableName>
       <RefColNames>UnionID</RefColNames>
     </foreign-key>
-    <foreign-key id="219" parent="203" name="fk_CTC_Class_1">
+    <foreign-key id="220" parent="203" name="fk_CTC_Class_1">
       <ColNames>ClassName</ColNames>
       <RefTableName>Class</RefTableName>
       <RefColNames>ClassName</RefColNames>
     </foreign-key>
-    <foreign-key id="220" parent="203" name="fk_CTC_Course_1">
+    <foreign-key id="221" parent="203" name="fk_CTC_Course_1">
       <ColNames>CourseName</ColNames>
       <RefTableName>Course</RefTableName>
       <RefColNames>CourseName</RefColNames>
     </foreign-key>
-    <column id="221" parent="204" name="ClassName">
+    <column id="222" parent="204" name="ClassName">
       <Position>1</Position>
       <DataType>varchar(48)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="222" parent="204" name="PRIMARY">
+    <key id="223" parent="204" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ClassName</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="223" parent="205" name="CourseName">
+    <column id="224" parent="205" name="CourseName">
       <Position>1</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="224" parent="205" name="PRIMARY">
+    <key id="225" parent="205" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>CourseName</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="225" parent="206" name="UnionID">
+    <column id="226" parent="206" name="UnionID">
       <Position>1</Position>
       <Comment>全局唯一ID</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="226" parent="206" name="Account">
+    <column id="227" parent="206" name="Account">
       <Position>2</Position>
       <Comment>账户登录名</Comment>
       <DataType>varchar(48)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="227" parent="206" name="Password">
+    <column id="228" parent="206" name="Password">
       <Position>3</Position>
       <Comment>账户密码</Comment>
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="228" parent="206" name="Name">
+    <column id="229" parent="206" name="Name">
       <Position>4</Position>
       <Comment>秘书名称</Comment>
       <DataType>varchar(48)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="229" parent="206" name="Age">
+    <column id="230" parent="206" name="Age">
       <Position>5</Position>
       <Comment>秘书年龄</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="230" parent="206" name="Telephone">
+    <column id="231" parent="206" name="Telephone">
       <Position>6</Position>
       <Comment>电话号码</Comment>
       <DataType>varchar(48)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="231" parent="206" name="LastLogin">
+    <column id="232" parent="206" name="LastLogin">
       <Position>7</Position>
       <Comment>最后登录时间</Comment>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="232" parent="206" name="PRIMARY">
+    <key id="233" parent="206" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>UnionID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="233" parent="207" name="UnionID">
+    <column id="234" parent="207" name="UnionID">
       <Position>1</Position>
       <Comment>全局唯一ID</Comment>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="234" parent="207" name="Account">
+    <column id="235" parent="207" name="Account">
       <Position>2</Position>
       <Comment>账户登录名</Comment>
       <DataType>varchar(48)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="207" name="Password">
+    <column id="236" parent="207" name="Password">
       <Position>3</Position>
       <Comment>账户密码</Comment>
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="236" parent="207" name="Name">
+    <column id="237" parent="207" name="Name">
       <Position>4</Position>
       <Comment>教师姓名</Comment>
       <DataType>varchar(48)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="237" parent="207" name="Age">
+    <column id="238" parent="207" name="Age">
       <Position>5</Position>
       <Comment>教师年龄</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="207" name="Telephone">
+    <column id="239" parent="207" name="Telephone">
       <Position>6</Position>
       <Comment>教师电话</Comment>
       <DataType>varchar(48)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="207" name="LastLogin">
+    <column id="240" parent="207" name="LastLogin">
       <Position>7</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="240" parent="207" name="PRIMARY">
+    <key id="241" parent="207" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>UnionID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="241" parent="208" name="ISBN">
+    <column id="242" parent="208" name="ISBN">
       <Position>1</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="208" name="Bname">
+    <column id="243" parent="208" name="Bname">
       <Position>2</Position>
       <Comment>教材名称</Comment>
       <DataType>varchar(256)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="208" name="Author">
+    <column id="244" parent="208" name="Author">
       <Position>3</Position>
       <Comment>教材作者</Comment>
       <DataType>varchar(256)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="208" name="Type">
+    <column id="245" parent="208" name="Type">
       <Position>4</Position>
       <Comment>教材类型</Comment>
       <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="208" name="Publisher">
+    <column id="246" parent="208" name="Publisher">
       <Position>5</Position>
       <DataType>varchar(256)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="208" name="PublishTime">
+    <column id="247" parent="208" name="PublishTime">
       <Position>6</Position>
       <DataType>varchar(256)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="247" parent="208" name="fk_TechBook_BookType_1">
+    <index id="248" parent="208" name="fk_TechBook_BookType_1">
       <ColNames>Type</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="248" parent="208" name="PRIMARY">
+    <key id="249" parent="208" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ISBN</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="249" parent="208" name="fk_TechBook_BookType_1">
+    <foreign-key id="250" parent="208" name="fk_TechBook_BookType_1">
       <ColNames>Type</ColNames>
       <RefTableName>BookType</RefTableName>
       <RefColNames>BookType</RefColNames>

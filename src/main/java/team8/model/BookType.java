@@ -44,17 +44,15 @@ public class BookType {
         return "删除失败";
     }
 
-    //need change 54
-    public String  update(String old,String newS){
-        int no = isBookTypeExit(newS);
+
+    public String  update(String old,String newT){
+        int no = isBookTypeExit(newT);
         if (no > -1) {
             System.out.println("不能修改");
             return "不能修改";
         }
-        delBookType(old);
-        addBookType(newS);
-        System.out.println("修改成功");
-        return "修改成功";
+
+        return bookTypeImpl.update(old,newT);
 
     }
 

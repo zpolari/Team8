@@ -26,7 +26,7 @@ public class TestBookType {
         }
         System.out.println();
 
-        bookType.update("1234","4321");
+        bookType.update("习题集","123");
 
 
 

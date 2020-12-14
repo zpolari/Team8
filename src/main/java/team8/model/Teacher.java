@@ -5,7 +5,7 @@ public class Teacher {
     private String Account;
     private String Password;
     private String Name;
-    private String    Age;
+    private String Age;
     private String Telephone;
 
     public Teacher() {
@@ -18,6 +18,18 @@ public class Teacher {
         Name = name;
         Age = age;
         Telephone = telephone;
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "UnionID='" + UnionID + '\'' +
+                ", Account='" + Account + '\'' +
+                ", Password='" + Password + '\'' +
+                ", Name='" + Name + '\'' +
+                ", Age='" + Age + '\'' +
+                ", Telephone='" + Telephone + '\'' +
+                '}';
     }
 
     public String getUnionID() {
@@ -68,3 +80,6 @@ public class Teacher {
         Telephone = telephone;
     }
 }
+
+
+

@@ -13,6 +13,8 @@ import java.io.IOException;
 
 public class SecretaryUIC {
     @FXML
+    Button TeacherControllerButton;
+    @FXML
     Button TechBookButton;
 
     static Stage stage = new Stage();
@@ -23,6 +25,13 @@ public class SecretaryUIC {
         new TechBookForm().start();
 
     }
+
+    @FXML
+    void TeacherShow(ActionEvent actionEvent) {
+        stage.hide();
+        new TeacherInfoFormC().start();
+    }
+
 
     void start() {
         Parent root = null;
@@ -36,5 +45,21 @@ public class SecretaryUIC {
 
         stage.setResizable(false);
         stage.show();
+    }
+
+    @FXML
+    void AddCTC(ActionEvent actionEvent) {
+
+        Stage AddCTCStage =new Stage();
+        try {
+            Parent parent=FXMLLoader.load(getClass().getResource("/FXML/AddCTC.fxml"));
+            AddCTCStage.setScene(new Scene(parent));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        AddCTCStage.show();
+
+
     }
 }
