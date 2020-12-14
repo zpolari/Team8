@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="591.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team8.controller.TechBookForm">
+    <children>
+        <TableView fx:id="TechBook" layoutX="68.0" layoutY="30.0" prefHeight="471.0" prefWidth="665.0">
+            <columns>
+                <TableColumn fx:id="ISBN" prefWidth="112.0" text="ISBN" />
+                <TableColumn fx:id="BNAME" prefWidth="110.0" text="书名" />
+                <TableColumn fx:id="AUTHOR" prefWidth="83.0" text="作者" />
+                <TableColumn fx:id="TYPE" minWidth="0.0" prefWidth="82.0" text="类型" />
+                <TableColumn fx:id="PUBLISHER" prefWidth="120.0" text="出版社" />
+                <TableColumn fx:id="PUBLISHTIME" minWidth="5.0" prefWidth="155.0" text="出版时间" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team8.controller.LoginFormC">
+   <children>
+      <Button fx:id="BackButton" layoutX="70.0" layoutY="51.0" mnemonicParsing="false" onAction="#Back" text="返回" />
+      <TextField fx:id="UserNameText" layoutX="220.0" layoutY="131.0" />
+      <TextField fx:id="PasswordText" layoutX="220.0" layoutY="189.0" />
+      <Label layoutX="148.0" layoutY="135.0" text="登录名" />
+      <Label layoutX="148.0" layoutY="193.0" text="密   码" />
+      <Button fx:id="SingUPButton" layoutX="220.0" layoutY="248.0" mnemonicParsing="false" onAction="#SingUP" text="注册" />
+      <Button fx:id="SingINButton" layoutX="326.0" layoutY="248.0" mnemonicParsing="false" onAction="#SingIN" text="登录" />
+      <Label fx:id="MsgLabel" layoutX="220.0" layoutY="223.0" prefHeight="15.0" prefWidth="161.0" />
+      <Label fx:id="whoIsLogin" layoutX="220.0" layoutY="84.0" prefHeight="15.0" prefWidth="161.0" />
+   </children>
+</AnchorPane>
