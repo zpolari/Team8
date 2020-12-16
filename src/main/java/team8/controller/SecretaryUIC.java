@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class SecretaryUIC {
+    public Button AddCTCB;
     @FXML
     Button TeacherControllerButton;
     @FXML
@@ -33,6 +34,7 @@ public class SecretaryUIC {
     }
 
 
+
     void start() {
         Parent root = null;
         try {
@@ -47,19 +49,10 @@ public class SecretaryUIC {
         stage.show();
     }
 
-    @FXML
-    void AddCTC(ActionEvent actionEvent) {
 
-        Stage AddCTCStage =new Stage();
-        try {
-            Parent parent=FXMLLoader.load(getClass().getResource("/FXML/AddCTC.fxml"));
-            AddCTCStage.setScene(new Scene(parent));
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        AddCTCStage.show();
-
-
+@FXML
+     void ShowCTC(ActionEvent actionEvent) {
+        stage.close();
+        new ShowCTCC().start();
     }
 }

@@ -9,7 +9,7 @@ import team8.controller.StartFormC;
 创建主类的时候继承javafx.application.Application 来通过
 重写start方法来
  */
-public class Main extends Application {
+public class  Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
