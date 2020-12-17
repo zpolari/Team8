@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 import team8.dao.BooksDao;
 import team8.dao.impl.BooksImpl;
 import team8.dao.impl.CTCImpl;
-import team8.model.Books;
+import team8.model.Book;
 import team8.model.CTC;
 import team8.model.Course;
 import team8.model.Teacher;
@@ -30,7 +30,7 @@ public class UpdateCTCC {
     static Stage stage = new Stage();
     static CTC ctc;
     static Teacher teacher;
-    static ArrayList<Books.Book> books = new BooksImpl().findAll().getArr();;
+    static ArrayList<Book> books = new BooksImpl().findAll();
     @FXML Label MsgLabel;
 
     @FXML
@@ -65,7 +65,7 @@ public class UpdateCTCC {
 
         ObservableList<String> isbn = FXCollections.observableArrayList();
 
-        for (Books.Book book : books
+        for (Book book : books
         ) {
             isbn.add(book.getISBN());
         }
@@ -83,7 +83,7 @@ public class UpdateCTCC {
 
         ObservableList<String> bName = FXCollections.observableArrayList();
 
-        for (Books.Book book : books
+        for (Book book : books
         ) {
             bName.add(book.getBName());
         }

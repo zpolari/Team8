@@ -6,53 +6,10 @@ import team8.dao.impl.BooksImpl;
 
 import java.util.ArrayList;
 
-public class Books {
+public class Book {
 
-    private ArrayList<Book> books = new ArrayList<Book>();
-    BooksDao booksDao = new BooksImpl();
+    private ArrayList<Book> books = new ArrayList<>();
 
-    public String addBook(Book book) {
-        books.add(book);
-        int no = isBookExit(book.getISBN());
-        if (no > -1) {
-            return "新增失败";
-
-        }
-        books.add(book);
-        booksDao.addBook(book);
-        return "新增成功";
-
-    }
-
-    public String delBook(String isbn) {
-        int no = isBookExit(isbn);
-
-        if (no > -1) {
-            booksDao.delBook(isbn);
-            return "删除成功" + books.remove(no).getISBN();
-        }
-        return "删除失败";
-    }
-
-    public Book updateBook(Book book) {
-        return booksDao.updateBook(book);
-    }
-
-    public int isBookExit(String isbn) {
-        for (int i = 0; i < books.size(); i++) {
-            if (books.get(i).getISBN().equals(isbn)) {
-                return i;
-            }
-        }
-        return -1;
-    }
-
-    public ArrayList<Book> getArr() {
-        return books;
-    }
-
-
-    public class Book {
 
         private String ISBN;
         private String BName;
@@ -135,4 +92,4 @@ public class Books {
     }
 
 
-}
+

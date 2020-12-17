@@ -2,19 +2,20 @@ package team8.dao.impl;
 
 import team8.dao.BooksDao;
 import team8.jdbc.JDBCUtil;
-import team8.model.Books;
+import team8.model.Book;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class BooksImpl implements BooksDao {
 
     private static PreparedStatement ps = null;
     private static ResultSet rs = null;
 
-    public Books findAll() {
-        Books books=new Books();
+    public ArrayList<Book> findAll() {
+        ArrayList<Book> arrayList=new ArrayList<>();
         Connection connection= JDBCUtil.getConnection();
 
         try{
@@ -22,7 +23,7 @@ public class BooksImpl implements BooksDao {
             rs=ps.executeQuery();
             while (rs.next()){
                 System.out.println("ADd Book");
-                books.addBook(books.new Book(rs.getString("ISBN"),rs.getString("Bname"),rs.getString("Author"),rs.getString("type"),rs.getString("publisher"),rs.getString("publishTime")));
+                arrayList.add(new Book(rs.getString("ISBN"),rs.getString("Bname"),rs.getString("Author"),rs.getString("type"),rs.getString("publisher"),rs.getString("publishTime")));
 
 
             }
@@ -34,13 +35,13 @@ public class BooksImpl implements BooksDao {
             JDBCUtil.close(rs,ps,connection);
         }
 
-        return books;
+        return arrayList;
     }
 
 
-    public Books.Book findBook(String isbn) {
-        Books books=new Books();
-        Books.Book book=books.new Book();
+    public Book findBook(String isbn) {
+
+        Book book=new Book();
         Connection connection= JDBCUtil.getConnection();
 
         try{
@@ -49,7 +50,7 @@ public class BooksImpl implements BooksDao {
             rs=ps.executeQuery();
             while (rs.next()){
                 System.out.println("get Book");
-                book= books.new Book(rs.getString("ISBN"),rs.getString("Bname"),rs.getString("Author"),rs.getString("type"),rs.getString("publisher"),rs.getString("publishTime"));
+                book= new Book(rs.getString("ISBN"),rs.getString("Bname"),rs.getString("Author"),rs.getString("type"),rs.getString("publisher"),rs.getString("publishTime"));
 
 
             }
@@ -64,7 +65,7 @@ public class BooksImpl implements BooksDao {
         return book;
     }
 
-    public String addBook(Books.Book book) {
+    public String addBook(Book book) {
         Connection connection=JDBCUtil.getConnection();
 
 
@@ -83,7 +84,7 @@ public class BooksImpl implements BooksDao {
         }finally {
             JDBCUtil.close(rs,ps,connection);
         }
-       return "新增成功"+book.toString();
+       return "新增成功";
 
 
 
@@ -109,7 +110,7 @@ public class BooksImpl implements BooksDao {
 
     }
 
-    public Books.Book updateBook(Books.Book book) {
+    public Book updateBook(Book book) {
         Connection connection=JDBCUtil.getConnection();
 
         try{

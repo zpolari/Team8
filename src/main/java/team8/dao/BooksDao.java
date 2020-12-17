@@ -1,17 +1,19 @@
 package team8.dao;
 
-import team8.model.Books;
+import team8.model.Book;
+
+import java.util.ArrayList;
 
 public interface BooksDao {
 
-    Books findAll();
+    ArrayList<Book> findAll();
 
-    String addBook(Books.Book book);
+    String addBook(Book book);
 
     String delBook(String isbn);
 
-    Books.Book updateBook(Books.Book book);
+    Book updateBook(Book book);
 
-     Books.Book findBook(String isbn);
+     Book findBook(String isbn);
 
 }

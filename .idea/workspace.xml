@@ -7,16 +7,8 @@
       <change afterPath="$PROJECT_DIR$/../PTA/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PTA/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Team8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherCTCC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team8/controller/UpdateCTCC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team8/dao/ClassDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team8/dao/CourseDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/ClassImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/CourseImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/team8/model/ClassC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/TeacherCTC.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/UpdateCTC.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/team8/controller/AddTechbookC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/FXML/AddTechbook.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWoke2/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWoke2/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWoke2/.idea/uiDesigner.xml" beforeDir="false" />
@@ -117,42 +109,32 @@
       <change beforePath="$PROJECT_DIR$/../PTA/out/production/PTA/Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PTA/src/Test.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/AddCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/AddCTCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/LoginFormC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/LoginFormC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/ShowCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/ShowCTCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherEditC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherEditC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherInfoFormC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherInfoFormC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/SecretaryUIC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/SecretaryUIC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherCTCC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherUIC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherUIC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TechBookForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TechBookForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/TeacherDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/TeacherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/TeacherImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/Books.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/Class.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/AddCTC.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/AddCTC.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/ShowCTC.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/ShowCTC.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/TeacherInfoForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/TeacherInfoForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/UpdateCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/UpdateCTCC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/BookTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/BookTypeDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/BooksDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/BooksDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/BookTypeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/BookTypeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/BooksImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/BooksImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/BookType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/BookType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/TeacherCTC.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/TeacherCTC.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/TeacherUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/TeacherUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/TechBookForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/TechBookForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBookType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBookType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/AddCTC.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/AddCTC.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/ShowCTC.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/ShowCTC.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/TeacherInfoForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/TeacherInfoForm.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/FXML/TeacherUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/TeacherUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/AddCTCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/AddCTCC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/LoginFormC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/LoginFormC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/ShowCTCC$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/ShowCTCC$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/ShowCTCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/ShowCTCC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TeacherEditC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TeacherEditC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TeacherInfoFormC$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TeacherInfoFormC$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TeacherInfoFormC$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TeacherInfoFormC$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TeacherInfoFormC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TeacherInfoFormC.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TeacherUIC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TeacherUIC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/CTCDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/CTCDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/TeacherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/TeacherDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TechBookForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TechBookForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/UpdateCTCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/UpdateCTCC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/BooksDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/BooksDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/BooksImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/BooksImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/CTCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/CTCImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/TeacherImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/TeacherImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/Class.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/model/Course.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/Books$Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/Books.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestBooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestBooks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/workspace.xml" beforeDir="false" />
@@ -505,7 +487,7 @@
       <workItem from="1608017071272" duration="4547000" />
       <workItem from="1608096368684" duration="924000" />
       <workItem from="1608102182216" duration="651000" />
-      <workItem from="1608197905042" duration="11829000" />
+      <workItem from="1608197905042" duration="16895000" />
     </task>
     <servers />
   </component>
@@ -525,10 +507,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="72" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607834317931" />
-    <state x="460" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1608209638918">
+    <state x="460" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1608213459658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="460" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608209638918" />
+    <state x="460" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608213459658" />
     <state x="904" y="197" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1607687564278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -541,38 +523,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1014" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607837059398" />
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1608209962300">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1608214938995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608209962300" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1608209962299">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608214938995" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1608214938995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608209962299" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1608209962299">
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608214938995" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1608214938995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608209962299" />
-    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1608209962299">
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608214938995" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1608214938995">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608209962299" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1608022081697">
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608214938995" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1608210796605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608022081697" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1608022081696">
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608210796605" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1608210796605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608022081696" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1608022081696">
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608210796605" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1608210796604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608022081696" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1608022081697">
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608210796604" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1608210796605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608022081697" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608210796605" />
     <state x="490" y="174" key="Maven.ArtifactSearchDialog" timestamp="1607921986742">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -593,17 +575,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="749" y="100" width="1071" height="840" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607687676787" />
-    <state x="690" y="284" key="extract.method.dialog" timestamp="1607836376184">
+    <state x="690" y="284" key="extract.method.dialog" timestamp="1608212582450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="284" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607836376184" />
+    <state x="690" y="284" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608212582450" />
     <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1607835124420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607835124420" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608207860250">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608212085304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608207860250" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608212085304" />
   </component>
 </project>

@@ -15,8 +15,8 @@ import java.io.IOException;
 
 public class TeacherUIC {
 
-    static Stage stage=new Stage();
-    static Teacher teacher=new Teacher();
+    static Stage stage = new Stage();
+    static Teacher teacher = new Teacher();
 
     @FXML
     Button CTCB;
@@ -38,31 +38,27 @@ public class TeacherUIC {
     }
 
 
-
     @FXML
     void showTechbook(ActionEvent actionEvent) {
-
-
-
+        new TechBookForm().start(teacher);
+        stage.close();
     }
 
     @FXML
     void UpdateInfo(ActionEvent actionEvent) {
 
-        new TeacherEditC().start(teacher,false);
+        new TeacherEditC().start(teacher, false);
 
     }
-
-
 
 
     @FXML
-    void initialize(){
-        InfoLabel.setText("你好："+teacher.getName()+"  老师");
+    void initialize() {
+        InfoLabel.setText("你好：" + teacher.getName() + "  老师");
     }
 
-    void start(Teacher t){
-        teacher=t;
+    void start(Teacher t) {
+        teacher = t;
         Parent root = null;
         try {
             root = FXMLLoader.load(getClass().getResource("/FXML/TeacherUI.fxml"));
@@ -76,8 +72,8 @@ public class TeacherUIC {
         stage.show();
     }
 
-
-
-
-
+    @FXML
+    void back(ActionEvent actionEvent) {
+        stage.close();
+    }
 }

@@ -1,14 +1,15 @@
 package team8.dao;
 
 
-import team8.model.BookType;
+import java.util.ArrayList;
 
 public interface BookTypeDAO {
 
     /**
      * 查询所有教科书类型
+     * @return
      */
-    public BookType findAll();
+    public ArrayList<String> findAll();
 
     /**
      * 新增教科书类型

@@ -18,6 +18,6 @@
             </columns>
         </TableView>
         <Button fx:id="BackB" layoutX="66.0" layoutY="31.0" mnemonicParsing="false" onAction="#Back" text="返回" />
-        <Button fx:id="AddCTCB" layoutX="608.0" layoutY="31.0" mnemonicParsing="false" onAction="#AddTechbook" text="新增教科书" />
+        <Button fx:id="AddCTCB" layoutX="608.0" layoutY="31.0" mnemonicParsing="false" onAction="#AddTechbook" text="管理教科书" />
     </children>
 </AnchorPane>

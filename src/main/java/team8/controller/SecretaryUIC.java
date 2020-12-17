@@ -8,6 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import team8.model.Secretary;
 
 import java.io.IOException;
 
@@ -23,7 +24,7 @@ public class SecretaryUIC {
     @FXML
     void TechBookShow(ActionEvent actionEvent) {
         stage.close();
-        new TechBookForm().start();
+        new TechBookForm().start(new Secretary());
 
     }
 

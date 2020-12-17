@@ -5,7 +5,7 @@
 
 <AnchorPane prefHeight="591.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team8.controller.TechBookForm">
     <children>
-        <TableView fx:id="TechBook" layoutX="68.0" layoutY="30.0" prefHeight="471.0" prefWidth="665.0">
+        <TableView fx:id="TechBook" layoutX="59.0" layoutY="75.0" prefHeight="471.0" prefWidth="665.0">
             <columns>
                 <TableColumn fx:id="ISBN" prefWidth="112.0" text="ISBN" />
                 <TableColumn fx:id="BNAME" prefWidth="110.0" text="书名" />
@@ -15,5 +15,8 @@
                 <TableColumn fx:id="PUBLISHTIME" minWidth="5.0" prefWidth="155.0" text="出版时间" />
             </columns>
         </TableView>
+      <Button fx:id="AddTechbookB" layoutX="794.0" layoutY="44.0" mnemonicParsing="false" onAction="#addTechbook" text="新增教科书" />
+      <Button fx:id="BackB" layoutX="59.0" layoutY="32.0" mnemonicParsing="false" onAction="#back" text="返回" />
+      <TextField fx:id="query" layoutX="735.0" layoutY="196.0" onKeyReleased="#queryKP"  promptText="输入筛选条件" />
     </children>
 </AnchorPane>

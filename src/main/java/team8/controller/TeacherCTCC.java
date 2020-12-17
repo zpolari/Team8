@@ -41,7 +41,8 @@ public class TeacherCTCC {
     }
 
     public void AddTechbook(ActionEvent actionEvent) {
-
+        new TechBookForm().start(teacher);
+        stage.close();
 
     }
 

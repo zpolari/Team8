@@ -7,14 +7,16 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class BookTypeImpl implements BookTypeDAO {
 
     private static PreparedStatement ps = null;
     private static ResultSet rs = null;
 
-    public BookType findAll() {
+    public ArrayList<String> findAll() {
         BookType bookType = new BookType();
+        ArrayList<String>arrayList=new ArrayList<>();
         Connection connection = JDBCUtil.getConnection();
 
         try {
@@ -23,14 +25,14 @@ public class BookTypeImpl implements BookTypeDAO {
             ps = connection.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
-                bookType.addBookType(rs.getString(1));
+                arrayList.add(rs.getString(1));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
             JDBCUtil.close(rs, ps, connection);
         }
-        return bookType;
+        return arrayList;
     }
 
     public String add(String string) {
