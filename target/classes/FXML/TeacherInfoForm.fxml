@@ -26,5 +26,6 @@
       </TableView>
       <Button fx:id="addTeacherB" layoutX="676.0" layoutY="24.0" mnemonicParsing="false" onAction="#AddTeacher" text="新增教师" />
       <Button fx:id="BackB" layoutX="55.0" layoutY="24.0" mnemonicParsing="false" onAction="#Back" text="返回" />
+      <Label fx:id="MsgLabel" layoutX="289.0" layoutY="28.0" prefHeight="23.0" prefWidth="164.0" />
    </children>
 </AnchorPane>

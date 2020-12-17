@@ -1,5 +1,7 @@
 package team8.controller;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -7,40 +9,44 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import team8.dao.CTCDAO;
 import team8.dao.impl.CTCImpl;
 import team8.dao.impl.TeacherImpl;
-import team8.model.Books;
-import team8.model.CTC;
-import team8.model.Teacher;
+import team8.model.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class ShowCTCC {
 
-    @FXML TableView CTCT;
-    @FXML TableColumn ClassT;
-    @FXML TableColumn CourseT;
-    @FXML TableColumn TeacherT;
-    @FXML TableColumn BNameT;
-    @FXML TableColumn DelT;
+    @FXML
+    TableView CTCT;
+    @FXML
+    TableColumn ClassT;
+    @FXML
+    TableColumn CourseT;
+    @FXML
+    TableColumn TeacherT;
+    @FXML
+    TableColumn BNameT;
+    @FXML
+    TableColumn DelT;
 
-    @FXML Button BackB;
-    @FXML Button AddCTCB;
+    @FXML
+    Button BackB;
+    @FXML
+    Button AddCTCB;
+
 
     static Stage stage = new Stage();
 
 
     @FXML
-     void Back(ActionEvent actionEvent) {
+    void Back(ActionEvent actionEvent) {
         stage.close();
         new SecretaryUIC().start();
     }
@@ -48,26 +54,15 @@ public class ShowCTCC {
 
     //
     @FXML
-    void AddCTC(ActionEvent actionEvent) {
+    void OpenAddCTC(ActionEvent actionEvent) {
 
-        Stage AddCTCStage =new Stage();
-        try {
-            Parent parent=FXMLLoader.load(getClass().getResource("/FXML/AddCTC.fxml"));
-            AddCTCStage.setScene(new Scene(parent));
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        AddCTCStage.show();
-
-
+        new AddCTCC().start();
+        stage.close();
     }
 
 
-
-
-    void showTable(){
-        CTCDAO ctcdao=new CTCImpl();
+    void showTable() {
+        CTCDAO ctcdao = new CTCImpl();
         ObservableList<CTC> list = FXCollections.observableArrayList(ctcdao.findByUnion("all"));
         ClassT.setCellValueFactory(new PropertyValueFactory("ClassName"));
         CourseT.setCellValueFactory(new PropertyValueFactory("CourseName"));
@@ -75,8 +70,8 @@ public class ShowCTCC {
         BNameT.setCellValueFactory(new PropertyValueFactory("BName"));
 
 
-        DelT.setCellFactory((col)->{
-                    TableCell<Teacher, String> cell = new TableCell<Teacher, String>(){
+        DelT.setCellFactory((col) -> {
+                    TableCell<Teacher, String> cell = new TableCell<Teacher, String>() {
 
                         @Override
                         public void updateItem(String item, boolean empty) {
@@ -116,13 +111,12 @@ public class ShowCTCC {
 
 
     @FXML
-    void initialize(){
+    void initialize() {
         showTable();
     }
 
 
-
-    void start(){
+    void start() {
         Parent root = null;
         try {
             root = FXMLLoader.load(getClass().getResource("/FXML/ShowCTC.fxml"));
@@ -136,6 +130,7 @@ public class ShowCTCC {
         stage.show();
     }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 }

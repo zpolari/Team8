@@ -103,9 +103,9 @@ public class CTCImpl implements CTCDAO {
 
         }catch (Exception e){
             e.printStackTrace();
-            return "修改任课安排失败";
+            return "修改教科书安排失败";
         }
-        return "修改任课安排成功";
+        return "修改教科书安排成功";
 
 
     }

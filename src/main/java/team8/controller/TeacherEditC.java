@@ -18,6 +18,7 @@ import java.io.IOException;
 public class TeacherEditC {
     static Stage stage = new Stage();
     static Teacher teacher=new Teacher();
+    static boolean aBoolean;
 
     @FXML Button BackB;
     @FXML Label UnionIDL;
@@ -36,7 +37,9 @@ public class TeacherEditC {
 
     public void Back(ActionEvent actionEvent) {
         stage.close();
-         new TeacherInfoFormC().start();
+        if (aBoolean){
+            new TeacherInfoFormC().start();
+        }
     }
 
     public void Add(ActionEvent actionEvent) {
@@ -76,8 +79,9 @@ public class TeacherEditC {
 
     }
 
-    void start(Teacher t){
+    void start(Teacher t,boolean b){
         teacher=t;
+        aBoolean=b;
 
         Parent root = null;
         try {

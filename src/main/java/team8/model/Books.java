@@ -10,10 +10,6 @@ public class Books {
 
     private ArrayList<Book> books = new ArrayList<Book>();
     BooksDao booksDao = new BooksImpl();
-    private static Books instance = new BooksImpl().findAll();
-    public static Books getInstance(){
-        return instance;
-    }
 
     public String addBook(Book book) {
         books.add(book);

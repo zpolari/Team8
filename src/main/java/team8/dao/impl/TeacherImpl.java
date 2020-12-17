@@ -1,6 +1,6 @@
 package team8.dao.impl;
 
-import jdk.nashorn.internal.scripts.JD;
+import com.mysql.cj.jdbc.exceptions.MysqlDataTruncation;
 import team8.dao.TeacherDAO;
 import team8.jdbc.JDBCUtil;
 import team8.model.Teacher;
@@ -8,6 +8,7 @@ import team8.model.Teacher;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.ArrayList;
 
 public class TeacherImpl implements TeacherDAO {
@@ -42,7 +43,7 @@ public class TeacherImpl implements TeacherDAO {
 
     }
 
-    public String delTeacher(String unionID) {
+    public boolean delTeacher(String unionID) {
 
         Connection connection=JDBCUtil.getConnection();
 
@@ -52,17 +53,17 @@ public class TeacherImpl implements TeacherDAO {
             ps.execute();
         }catch (Exception e){
             e.printStackTrace();
-            return  "删除教师失败";
+            return  true;
         }finally {
             JDBCUtil.close(rs,ps,connection);
         }
 
-        return "删除教师成功";
+        return false;
 
 
     }
 
-    public Teacher updateTeacher(Teacher teacher) {
+    public String updateTeacher(Teacher teacher) {
 
         Connection connection=JDBCUtil.getConnection();
 
@@ -75,16 +76,25 @@ public class TeacherImpl implements TeacherDAO {
             ps.setString(5,teacher.getTelephone());
             ps.setString(6,teacher.getUnionID());
             ps.execute();
-            return  teacher;
+            return  "保存成功";
 
+        }catch (MysqlDataTruncation e){
+            e.printStackTrace();
+            return "请规范输入";
+
+        }catch (SQLIntegrityConstraintViolationException e){
+            e.printStackTrace();
+            return "账户名已被使用，请换一个";
         }catch (Exception e){
             e.printStackTrace();
-
+            return "出现异常，请重试";
         }finally {
             JDBCUtil.close(rs,ps,connection);
         }
-        return teacher;
 
 
     }
+
+
+
 }

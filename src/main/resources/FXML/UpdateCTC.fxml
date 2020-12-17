@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="260.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team8.controller.UpdateCTCC">
+   <children>
+      <Button fx:id="BackB" layoutX="43.0" layoutY="39.0" mnemonicParsing="false" onAction="#back" text="返回" />
+      <Label fx:id="ClassL" layoutX="51.0" layoutY="130.0" prefHeight="15.0" prefWidth="88.0" />
+      <Label fx:id="CourseL" layoutX="185.0" layoutY="130.0" prefHeight="15.0" prefWidth="88.0" />
+      <ComboBox fx:id="BNameC" layoutX="467.0" layoutY="126.0" prefWidth="150.0" />
+      <ComboBox fx:id="ISBNC" layoutX="303.0" layoutY="126.0" prefWidth="150.0" />
+      <Button fx:id="SaveB" layoutX="524.0" layoutY="187.0" mnemonicParsing="false" onAction="#save" prefHeight="23.0" prefWidth="58.0" text="保存" />
+      <Label layoutX="51.0" layoutY="99.0" text="班级" />
+      <Label layoutX="185.0" layoutY="99.0" text="课程" />
+      <Label layoutX="348.0" layoutY="99.0" text="根据ISBN选择" />
+      <Label layoutX="500.0" layoutY="99.0" prefHeight="15.0" prefWidth="100.0" text="根据教材名选择" />
+      <Label fx:id="MsgLabel" layoutX="303.0" layoutY="191.0" prefHeight="15.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

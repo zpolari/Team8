@@ -7,10 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableCell;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -22,17 +19,30 @@ import java.io.IOException;
 
 public class TeacherInfoFormC {
     static Stage stage = new Stage();
-    public Button addTeacherB;
-    public Button BackB;
-    @FXML  TableView TeacherTable;
-    @FXML TableColumn UnionID;
-    @FXML TableColumn Account;
-    @FXML TableColumn Password;
-    @FXML TableColumn Name;
-    @FXML TableColumn Telephone;
-    @FXML TableColumn Age;
-    @FXML TableColumn Edit;
-    @FXML TableColumn Del;
+    @FXML
+    Button addTeacherB;
+    @FXML
+    Button BackB;
+    @FXML
+    Label MsgLabel;
+    @FXML
+    TableView TeacherTable;
+    @FXML
+    TableColumn UnionID;
+    @FXML
+    TableColumn Account;
+    @FXML
+    TableColumn Password;
+    @FXML
+    TableColumn Name;
+    @FXML
+    TableColumn Telephone;
+    @FXML
+    TableColumn Age;
+    @FXML
+    TableColumn Edit;
+    @FXML
+    TableColumn Del;
 
 
     private void showList() {
@@ -45,10 +55,10 @@ public class TeacherInfoFormC {
         Telephone.setCellValueFactory(new PropertyValueFactory("Telephone"));
         Age.setCellValueFactory(new PropertyValueFactory("Age"));
 
-        Edit.setCellFactory((col)->{
+        Edit.setCellFactory((col) -> {
 
                     //UserLoad换成你自己的实体名称
-                    TableCell<Teacher, String> cell = new TableCell<Teacher, String>(){
+                    TableCell<Teacher, String> cell = new TableCell<Teacher, String>() {
                         @Override
                         protected void updateItem(String item, boolean empty) {
                             super.updateItem(item, empty);
@@ -60,7 +70,7 @@ public class TeacherInfoFormC {
                                 //获取list列表中的位置，进而获取列表对应的信息数据
                                 Teacher teacher = list.get(getIndex());
                                 //按钮事件自己添加
-                                new TeacherEditC().start(teacher);
+                                new TeacherEditC().start(teacher,true);
                                 stage.close();
                             });
 
@@ -77,8 +87,8 @@ public class TeacherInfoFormC {
                 }
         );
 
-        Del.setCellFactory((col)->{
-                    TableCell<Teacher, String> cell = new TableCell<Teacher, String>(){
+        Del.setCellFactory((col) -> {
+                    TableCell<Teacher, String> cell = new TableCell<Teacher, String>() {
 
                         @Override
                         public void updateItem(String item, boolean empty) {
@@ -92,7 +102,11 @@ public class TeacherInfoFormC {
                                 //获取list列表中的位置，进而获取列表对应的信息数据
                                 Teacher teacher = list.get(getIndex());
                                 //按钮事件自己添加
-                                System.out.println(new TeacherImpl().delTeacher(teacher.getUnionID()));
+                                if (new TeacherImpl().delTeacher(teacher.getUnionID())) {
+                                    MsgLabel.setText("此老师有课程安排，无法删除");
+                                    return;
+                                }
+
                                 showList();
                             });
 
@@ -109,7 +123,6 @@ public class TeacherInfoFormC {
                     return cell;
                 }
         );
-
 
 
         TeacherTable.setItems(list);
@@ -137,7 +150,7 @@ public class TeacherInfoFormC {
 
 
     public void AddTeacher(ActionEvent actionEvent) {
-        new TeacherEditC().start(new Teacher());
+        new TeacherEditC().start(new Teacher(),true);
         stage.close();
     }
 

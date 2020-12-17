@@ -10,9 +10,9 @@ public interface TeacherDAO {
 
     String addTeacher(Teacher teacher);
 
-    String delTeacher(String unionID);
+    boolean delTeacher(String unionID);
 
-    Teacher updateTeacher(Teacher teacher);
+    String updateTeacher(Teacher teacher);
 
 
 }

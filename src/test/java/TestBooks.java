@@ -8,7 +8,7 @@ public class TestBooks {
 
     @Test
    public void TestBooks(){
-        Books books=Books.getInstance();
+        Books books=new BooksImpl().findAll();
 
         ArrayList<Books.Book> arrayList=books.getArr();
 

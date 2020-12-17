@@ -11,6 +11,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import team8.dao.impl.BooksImpl;
 import team8.model.Books;
 
 import java.io.IOException;
@@ -35,7 +36,7 @@ public class TechBookForm {
 
 
     public void showList(){
-        ObservableList<Books.Book> list = FXCollections.observableArrayList(Books.getInstance().getArr());
+        ObservableList<Books.Book> list = FXCollections.observableArrayList(new BooksImpl().findAll().getArr());
 
         ISBN.setCellValueFactory(new PropertyValueFactory("ISBN"));//映射
         BNAME.setCellValueFactory(new PropertyValueFactory("BName"));//映射

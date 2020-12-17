@@ -34,8 +34,8 @@ public class LoginFormC {
 
     static String whoIs;
     public static Stage stage = new Stage();
-    static Secretary secretary=null;
-    static Teacher teacher=null;
+    static Secretary secretary = null;
+    static Teacher teacher = null;
 
 
     @FXML
@@ -54,25 +54,26 @@ public class LoginFormC {
     @FXML
     void SingIN(ActionEvent actionEvent) {
 
-        if (whoIs.equals("教师")){
-             teacher=new LoginImpl().teacherLogin(UserNameText.getText(),PasswordText.getText());
+        if (whoIs.equals("教师")) {
+            teacher = new LoginImpl().teacherLogin(UserNameText.getText(), PasswordText.getText());
             System.out.println(teacher);
-            if (teacher==null){
+            if (teacher == null) {
                 MsgLabel.setText("登录失败");
 
-            }else {
-                MsgLabel.setText("登录成功");
+            } else {
+                stage.close();
+                new TeacherUIC().start(teacher);
             }
 
         }
 
-        if (whoIs.equals("教学秘书")){
-            secretary=new LoginImpl().secretaryLogin(UserNameText.getText(),PasswordText.getText());
+        if (whoIs.equals("教学秘书")) {
+            secretary = new LoginImpl().secretaryLogin(UserNameText.getText(), PasswordText.getText());
             System.out.println(secretary);
-            if (secretary==null){
+            if (secretary == null) {
                 MsgLabel.setText("登录失败");
 
-            }else {
+            } else {
                 MsgLabel.setText("登录成功");
                 stage.close();
                 new SecretaryUIC().start();
