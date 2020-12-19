@@ -110,19 +110,21 @@ public class BooksImpl implements BooksDao {
 
     }
 
-    public Book updateBook(Book book) {
+    public String updateBook(Book book) {
         Connection connection=JDBCUtil.getConnection();
 
         try{
             ps=connection.prepareStatement("UPDATE TechBook SET Bname=? ,Author=? ,Type=?,Publisher=?,PublishTime=? WHERE ISBN=?");
+            System.out.println(book.toString());
             ps.setString(1,book.getBName());
             ps.setString(2,book.getAuthor());
             ps.setString(3,book.getType());
             ps.setString(4,book.getPublisher());
             ps.setString(5,book.getPublishTime());
             ps.setString(6,book.getISBN());
+
             ps.execute();
-            return  findBook(book.getISBN());
+            return  "修改成功";
 
         }catch (Exception e){
             e.printStackTrace();
@@ -130,7 +132,7 @@ public class BooksImpl implements BooksDao {
         }finally {
             JDBCUtil.close(rs,ps,connection);
         }
-     return book;
+     return "修改失败";
 
     }
 }

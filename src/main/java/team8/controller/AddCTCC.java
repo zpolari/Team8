@@ -23,9 +23,9 @@ import team8.model.Course;
 import team8.model.Teacher;
 
 import java.io.IOException;
-import java.lang.reflect.Field;
+
 import java.util.ArrayList;
-import java.util.Vector;
+
 
 public class AddCTCC {
     static Stage stage = new Stage();

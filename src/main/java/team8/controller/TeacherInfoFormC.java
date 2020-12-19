@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -70,7 +71,7 @@ public class TeacherInfoFormC {
                                 //获取list列表中的位置，进而获取列表对应的信息数据
                                 Teacher teacher = list.get(getIndex());
                                 //按钮事件自己添加
-                                new TeacherEditC().start(teacher,true);
+                                new TeacherEditC().start(teacher, true);
                                 stage.close();
                             });
 
@@ -83,6 +84,8 @@ public class TeacherInfoFormC {
                             }
                         }
                     };
+                    cell.setAlignment(Pos.CENTER);
+
                     return cell;
                 }
         );
@@ -120,6 +123,8 @@ public class TeacherInfoFormC {
                             }
                         }
                     };
+                    cell.setAlignment(Pos.CENTER);
+
                     return cell;
                 }
         );
@@ -150,7 +155,7 @@ public class TeacherInfoFormC {
 
 
     public void AddTeacher(ActionEvent actionEvent) {
-        new TeacherEditC().start(new Teacher(),true);
+        new TeacherEditC().start(new Teacher(), true);
         stage.close();
     }
 

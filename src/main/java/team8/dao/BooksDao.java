@@ -12,7 +12,7 @@ public interface BooksDao {
 
     String delBook(String isbn);
 
-    Book updateBook(Book book);
+    String updateBook(Book book);
 
      Book findBook(String isbn);
 

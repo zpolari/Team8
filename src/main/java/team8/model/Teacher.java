@@ -1,5 +1,12 @@
 package team8.model;
 
+/**
+ * 任课教师信息记录类
+ * 属性：教师UnionID、登录账户名、账户密码、名称、年龄、电话
+ * Author:zPolari
+ * Time:2020-12-19
+ */
+
 public class Teacher {
     private String UnionID;
     private String Account;

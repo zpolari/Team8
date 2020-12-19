@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -23,7 +24,7 @@ import java.io.IOException;
 
 public class TeacherCTCC {
     static Teacher teacher;
-    static Stage stage=new Stage();
+    static Stage stage = new Stage();
 
     public Button AddCTCB;
     public Button BackB;
@@ -46,10 +47,9 @@ public class TeacherCTCC {
 
     }
 
-    void showTable(){
+    void showTable() {
         CTCDAO ctcdao = new CTCImpl();
         ObservableList<CTC> list = FXCollections.observableArrayList(ctcdao.findByUnion(teacher.getUnionID()));
-
 
 
         ClassT.setCellValueFactory(new PropertyValueFactory("ClassName"));
@@ -72,7 +72,7 @@ public class TeacherCTCC {
                                 //获取list列表中的位置，进而获取列表对应的信息数据
                                 CTC ctc = list.get(getIndex());
                                 //按钮事件自己添加
-                                new UpdateCTCC().start(ctc,teacher);
+                                new UpdateCTCC().start(ctc, teacher);
                                 stage.close();
 
                             });
@@ -87,6 +87,8 @@ public class TeacherCTCC {
                             }
                         }
                     };
+                    cell.setAlignment(Pos.CENTER);
+
                     return cell;
                 }
         );
@@ -95,13 +97,13 @@ public class TeacherCTCC {
     }
 
     @FXML
-    void initialize(){
+    void initialize() {
         showTable();
     }
 
 
-    void start(Teacher t){
-        teacher=t;
+    void start(Teacher t) {
+        teacher = t;
 
         Parent root = null;
         try {

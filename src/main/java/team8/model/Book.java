@@ -1,15 +1,12 @@
 package team8.model;
 
-import team8.dao.BooksDao;
-import team8.dao.impl.BookTypeImpl;
-import team8.dao.impl.BooksImpl;
-
-import java.util.ArrayList;
-
+/**
+ * 教科书信息类
+ * 属性：ISBN号、书名、作者名称、教科书类型、出版社、出版时间
+ * Author:zPolari
+ * Time:2020-12-19
+ */
 public class Book {
-
-    private ArrayList<Book> books = new ArrayList<>();
-
 
         private String ISBN;
         private String BName;

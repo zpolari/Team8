@@ -20,7 +20,7 @@
       <TextField fx:id="AgeT" layoutX="395.0" layoutY="216.0" />
       <Button fx:id="AddB" layoutX="395.0" layoutY="289.0" mnemonicParsing="false" onAction="#Add" text="新增" />
       <Button fx:id="SaveB" layoutX="471.0" layoutY="289.0" mnemonicParsing="false" onAction="#Save" text="保存" />
-      <Label fx:id="MsgLabel" layoutX="395.0" layoutY="259.0" prefHeight="15.0" prefWidth="161.0" text="MsgLable" />
-      <Label fx:id="TitleLabel" layoutX="157.0" layoutY="52.0" prefHeight="15.0" prefWidth="286.0" text="TitleLabel" />
+      <Label fx:id="MsgLabel" layoutX="395.0" layoutY="259.0" prefHeight="15.0" prefWidth="161.0" />
+      <Label fx:id="TitleLabel" layoutX="157.0" layoutY="52.0" prefHeight="15.0" prefWidth="286.0" />
    </children>
 </AnchorPane>

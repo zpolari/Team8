@@ -57,6 +57,8 @@ public class TeacherEditC {
 
     @FXML
     void initialize(){
+        TitleLabel.setText("修改："+teacher.getName()+"  老师信息");
+
         if (teacher.getUnionID()==null){
 
             SaveB.setVisible(false);

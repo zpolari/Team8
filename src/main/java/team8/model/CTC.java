@@ -1,5 +1,17 @@
 package team8.model;
 
+
+/**
+ * 任课安排信息记录类
+ *
+ * 属性：班级名称、课程名称、
+ * 教师UnionID、教师名称、
+ * 书籍ISBN号、书籍名称
+ *
+ * Author:zPolari
+ * Time:2020-12-19
+ */
+
 public class CTC {
     private String ClassName;
     private String CourseName;

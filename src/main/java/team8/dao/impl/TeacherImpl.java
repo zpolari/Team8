@@ -1,6 +1,6 @@
 package team8.dao.impl;
 
-import com.mysql.cj.jdbc.exceptions.MysqlDataTruncation;
+import com.mysql.jdbc.MysqlDataTruncation;
 import team8.dao.TeacherDAO;
 import team8.jdbc.JDBCUtil;
 import team8.model.Teacher;

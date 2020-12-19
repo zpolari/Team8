@@ -20,6 +20,6 @@
         <Label fx:id="MsgLabel" layoutX="369.0" layoutY="302.0" prefHeight="15.0" prefWidth="161.0" />
       <ComboBox fx:id="TypeC" layoutX="375.0" layoutY="181.0" prefHeight="23.0" prefWidth="161.0" />
       <Label layoutX="318.0" layoutY="255.0" text="出版时间" />
-      <TextField fx:id="PublishTimeT" layoutX="381.0" layoutY="251.0" />
+      <DatePicker fx:id="dateC" layoutX="375.0" layoutY="251.0" prefHeight="23.0" prefWidth="161.0" promptText="yyyy-mm-dd" />
     </children>
 </AnchorPane>
