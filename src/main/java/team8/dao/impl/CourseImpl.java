@@ -9,6 +9,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
+/**
+ * 课程 数据库操作定义接口 实现
+ * 方法：查询全部课程、根据班级名称查询未安排课程
+ * Author:zPolari
+ * Time:2020-12-18
+ */
+
 public class CourseImpl implements CourseDAO {
 
     private static PreparedStatement ps = null;
@@ -27,15 +34,11 @@ public class CourseImpl implements CourseDAO {
 
             }
         } catch (Exception e) {
-
             e.printStackTrace();
-
         } finally {
             JDBCUtil.close(rs, ps, connection);
         }
-
         return arrayList;
-
 
     }
 

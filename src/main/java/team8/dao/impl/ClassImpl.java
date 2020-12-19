@@ -8,6 +8,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
+/**
+ * 班级 数据库操作定义接口 实现
+ * 方法：查询全部班级
+ * Author:zPolari
+ * Time:2020-12-18
+ */
+
 public class ClassImpl implements ClassDAO {
 
     private static PreparedStatement ps = null;
@@ -15,27 +22,21 @@ public class ClassImpl implements ClassDAO {
 
     @Override
     public ArrayList<String> findAll() {
-        ArrayList<String>arrayList=new ArrayList<>();
-        Connection connection= JDBCUtil.getConnection();
+        ArrayList<String> arrayList = new ArrayList<>();
+        Connection connection = JDBCUtil.getConnection();
 
-        try{
-            ps=connection.prepareStatement("SELECT * FROM Class");
-            rs=ps.executeQuery();
-            while (rs.next()){
+        try {
+            ps = connection.prepareStatement("SELECT * FROM Class");
+            rs = ps.executeQuery();
+            while (rs.next()) {
                 arrayList.add(rs.getString(1));
-
             }
-        }catch (Exception e){
-
+        } catch (Exception e) {
             e.printStackTrace();
-
-        }finally {
-            JDBCUtil.close(rs,ps,connection);
+        } finally {
+            JDBCUtil.close(rs, ps, connection);
         }
-
         return arrayList;
-
-
-
     }
+
 }

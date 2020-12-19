@@ -7,6 +7,13 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 
+/**
+ * 数据库连接获取和关闭
+ * 方法：获取数据库连接、关闭（连接、结果集、准备器）
+ * Author:zPolari
+ * Time:2020-12-18
+ */
+
 public class JDBCUtil {
     static Connection conn = null;
     static final String DB_URL = "jdbc:mysql://116.255.186.125:3306/test";

@@ -14,8 +14,6 @@
       <change afterPath="$PROJECT_DIR$/../PTA/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PTA/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Team8 - 副本/Team8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Team8.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWoke2/.idea/misc.xml" beforeDir="false" />
@@ -117,38 +115,22 @@
       <change beforePath="$PROJECT_DIR$/../PTA/out/production/PTA/META-INF/PTA.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PTA/out/production/PTA/Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PTA/src/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Team8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Team8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/AddCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/AddCTCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/AddTechbookC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/AddTechbookC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherCTCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherEditC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherEditC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherInfoFormC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherInfoFormC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TechBookForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TechBookForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/BookTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/BookTypeDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/BooksDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/BooksDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/CTCDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/CTCDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/ClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/ClassDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/CourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/CourseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/TeacherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/BookTypeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/BookTypeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/BooksImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/BooksImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/CTCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/CTCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/ClassImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/ClassImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/CourseImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/CourseImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/LoginImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/LoginImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/TeacherImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/TeacherImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/BookType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/BookType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/CTC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/CTC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/ClassC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/ClassC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/Secretary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/Secretary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/AddTechbook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/AddTechbook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/TeacherEditForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/TeacherEditForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/TechBookForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/TechBookForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Team8.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/TeacherImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/TeacherImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Team8.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestBookType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestBookType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestBooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestBooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCTC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCTC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/test.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/jdbc/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/jdbc/JDBCUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/workspace.xml" beforeDir="false" />
@@ -504,7 +486,7 @@
       <workItem from="1608102182216" duration="651000" />
       <workItem from="1608197905042" duration="17474000" />
       <workItem from="1608215539218" duration="1625000" />
-      <workItem from="1608372974266" duration="3622000" />
+      <workItem from="1608372974266" duration="4574000" />
     </task>
     <servers />
   </component>
@@ -524,10 +506,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="72" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607834317931" />
-    <state x="460" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1608213459658">
+    <state x="709" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1608377227085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="460" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608213459658" />
+    <state x="709" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608377227085" />
     <state x="904" y="197" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1607687564278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -540,22 +522,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1014" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607837059398" />
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1608375886591">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1608377251502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608375886591" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1608375886591">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608377251502" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1608377251502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608375886591" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1608375886591">
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608377251502" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1608377251502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608375886591" />
-    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1608375886591">
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608377251502" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1608377251502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608375886591" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608377251502" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1608215522896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

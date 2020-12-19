@@ -3,20 +3,28 @@ package team8.dao.impl;
 import team8.dao.BookTypeDAO;
 import team8.jdbc.JDBCUtil;
 import team8.model.BookType;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+/**
+ * 教科书类型 数据库操作定义接口 实现
+ * 方法：查询全部教科书类型、新增教科书类型、删除教科书类型、更新教科书类型
+ * Author:zPolari
+ * Time:2020-12-18
+ */
+
 public class BookTypeImpl implements BookTypeDAO {
 
     private static PreparedStatement ps = null;
     private static ResultSet rs = null;
 
+    @Override
     public ArrayList<String> findAll() {
-        BookType bookType = new BookType();
-        ArrayList<String>arrayList=new ArrayList<>();
+        ArrayList<String> arrayList = new ArrayList<>();
         Connection connection = JDBCUtil.getConnection();
 
         try {
@@ -35,6 +43,7 @@ public class BookTypeImpl implements BookTypeDAO {
         return arrayList;
     }
 
+    @Override
     public String add(String string) {
         Connection connection = JDBCUtil.getConnection();
 
@@ -46,18 +55,14 @@ public class BookTypeImpl implements BookTypeDAO {
             ps.execute();
 
         } catch (Exception e) {
-
-            System.out.println("新增失败 该教科书类型已存在");
             return "新增失败 该教科书类型已存在";
         }
-        System.out.println("新增成功 教科书类型为：" + string);
         return "新增成功 教科书类型为：" + string;
     }
 
-
+    @Override
     public String del(String string) {
         Connection connection = JDBCUtil.getConnection();
-
 
         String sql = "DELETE FROM BookType WHERE booktype=" + string;
         try {
@@ -66,31 +71,24 @@ public class BookTypeImpl implements BookTypeDAO {
             ps.execute();
 
         } catch (Exception e) {
-
-            System.out.println("删除失败，请确认无此类型教科书后尝试");
             return "删除失败，请确认无此类型教科书后尝试";
         }
-        System.out.println("删除成功 教科书类型为：" + string);
         return "删除成功 教科书类型为：" + string;
     }
 
+    @Override
     public String update(String old, String newT) {
         Connection connection = JDBCUtil.getConnection();
 
         try {
-            ps=connection.prepareStatement("UPDATE BookType SET BookType =? WHERE BookType =?");
-            ps.setString(1,newT);
-            ps.setString(2,old);
+            ps = connection.prepareStatement("UPDATE BookType SET BookType =? WHERE BookType =?");
+            ps.setString(1, newT);
+            ps.setString(2, old);
             ps.execute();
-        }catch (Exception e){
+        } catch (Exception e) {
             return "无法修改";
         }
-
-
-
-
         return "修改成功";
-
     }
 
 }

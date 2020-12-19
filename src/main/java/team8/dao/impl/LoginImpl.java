@@ -8,13 +8,22 @@ import team8.model.Teacher;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Time;
+
+
+/**
+ * 登录注册 数据库操作定义接口 实现
+ * 方法：教学秘书登录、教师登录、教学秘书注册、教师注册
+ * Author:zPolari
+ * Time:2020-12-18
+ */
+
 
 public class LoginImpl implements LoginDao {
 
     private static PreparedStatement ps = null;
     private static ResultSet rs = null;
 
+    @Override
     public Secretary secretaryLogin(String account, String password) {
         Connection connection = JDBCUtil.getConnection();
         Secretary secretary = new Secretary();
@@ -36,24 +45,21 @@ public class LoginImpl implements LoginDao {
                 }
             }
 
-
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             JDBCUtil.close(rs, ps, connection);
         }
 
-
-        if (secretary.getAccount()!=null){
+        if (secretary.getAccount() != null) {
             return secretary;
-        }else {
+        } else {
             return null;
         }
+
     }
 
-
-
-
+    @Override
     public Teacher teacherLogin(String account, String password) {
         Connection connection = JDBCUtil.getConnection();
         Teacher teacher = new Teacher();
@@ -74,109 +80,85 @@ public class LoginImpl implements LoginDao {
                 }
             }
 
-
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             JDBCUtil.close(rs, ps, connection);
         }
 
-
-        if (teacher.getAccount()!=null){
+        if (teacher.getAccount() != null) {
             return teacher;
-        }else {
+        } else {
             return null;
         }
+
     }
 
+    @Override
     public String secretarySingUp(Secretary secretary) {
-        Connection connection=JDBCUtil.getConnection();
+        Connection connection = JDBCUtil.getConnection();
 
-        try{
-            ps=connection.prepareStatement("SELECT UnionID FROM Secretary WHERE Account=? LIMIT 1");
-            ps.setString(1,secretary.getAccount());
-            rs=ps.executeQuery();
+        try {
+            ps = connection.prepareStatement("SELECT UnionID FROM Secretary WHERE Account=? LIMIT 1");
+            ps.setString(1, secretary.getAccount());
+            rs = ps.executeQuery();
             System.out.println(rs);
 
-            while (rs.next()){
+            while (rs.next()) {
                 return "此登录名已存在";
             }
 
-            ps=connection.prepareStatement("INSERT INTO Secretary (UnionID, Account, Password, Name, Age, Telephone, LastLogin) VALUES (?,?,?,?,?,?,?)");
-            ps.setString(1,secretary.getUnionID());
-            ps.setString(2,secretary.getAccount());
-            ps.setString(3,secretary.getPassword());
-            ps.setString(4,secretary.getName());
-            ps.setString(5,secretary.getAge());
-            ps.setString(6,secretary.getTelephone());
-            ps.setString(7,"1");
+            ps = connection.prepareStatement("INSERT INTO Secretary (UnionID, Account, Password, Name, Age, Telephone, LastLogin) VALUES (?,?,?,?,?,?,?)");
+            ps.setString(1, secretary.getUnionID());
+            ps.setString(2, secretary.getAccount());
+            ps.setString(3, secretary.getPassword());
+            ps.setString(4, secretary.getName());
+            ps.setString(5, secretary.getAge());
+            ps.setString(6, secretary.getTelephone());
+            ps.setString(7, "1");
+            ps.execute();
 
-            System.out.println(secretary.getUnionID());
-
-            System.out.println(ps.execute());
-
-
-
-
-
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return "请规范填写";
-
-        }finally {
+        } finally {
             JDBCUtil.close(rs, ps, connection);
         }
-
-
-
-
 
         return "新增成功";
     }
 
-
-
+    @Override
     public String teacherSingUp(Teacher teacher) {
-        Connection connection=JDBCUtil.getConnection();
+        Connection connection = JDBCUtil.getConnection();
 
-        try{
-            ps=connection.prepareStatement("SELECT UnionID FROM Teacher WHERE Account=? LIMIT 1");
-            ps.setString(1,teacher.getAccount());
-            rs=ps.executeQuery();
+        try {
+            ps = connection.prepareStatement("SELECT UnionID FROM Teacher WHERE Account=? LIMIT 1");
+            ps.setString(1, teacher.getAccount());
+            rs = ps.executeQuery();
             System.out.println(rs);
 
-            while (rs.next()){
+            while (rs.next()) {
                 return "此登录名已存在";
             }
 
-            ps=connection.prepareStatement("INSERT INTO Teacher (UnionID, Account, Password, Name, Age, Telephone, LastLogin) VALUES (?,?,?,?,?,?,?)");
-            ps.setString(4,teacher.getName());
-            ps.setString(5,teacher.getAge());
-            ps.setString(6,teacher.getTelephone());
-            ps.setString(1,teacher.getUnionID());
-            ps.setString(2,teacher.getAccount());
-            ps.setString(3,teacher.getPassword());
+            ps = connection.prepareStatement("INSERT INTO Teacher (UnionID, Account, Password, Name, Age, Telephone, LastLogin) VALUES (?,?,?,?,?,?,?)");
+            ps.setString(4, teacher.getName());
+            ps.setString(5, teacher.getAge());
+            ps.setString(6, teacher.getTelephone());
+            ps.setString(1, teacher.getUnionID());
+            ps.setString(2, teacher.getAccount());
+            ps.setString(3, teacher.getPassword());
+            ps.setString(7, "1");
 
-            ps.setString(7,"1");
+            ps.execute();
 
-            System.out.println(teacher.getUnionID());
-
-            System.out.println(ps.execute());
-
-
-
-
-
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return "请规范填写";
-        }finally {
+        } finally {
             JDBCUtil.close(rs, ps, connection);
         }
-
-
-
-
 
         return "新增成功";
     }
