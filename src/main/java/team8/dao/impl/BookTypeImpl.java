@@ -2,7 +2,6 @@ package team8.dao.impl;
 
 import team8.dao.BookTypeDAO;
 import team8.jdbc.JDBCUtil;
-import team8.model.BookType;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

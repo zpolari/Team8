@@ -13,6 +13,14 @@ import team8.model.Teacher;
 
 import java.io.IOException;
 
+/**
+ * 任课教师 用户界面窗口 控制器
+ * Author:zPolari
+ * Time:2020-12-20
+ */
+
+
+
 public class TeacherUIC {
 
     static Stage stage = new Stage();

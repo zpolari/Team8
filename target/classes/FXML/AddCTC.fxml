@@ -14,7 +14,7 @@
       <ComboBox fx:id="teacherC" layoutX="340.0" layoutY="97.0" prefHeight="23.0" prefWidth="123.0" promptText="任课教师">
 
       </ComboBox>
-      <Button fx:id="AddBackB" layoutX="29.0" layoutY="29.0" mnemonicParsing="false" onAction="#addBack" text="返回" />
+      <Button layoutX="29.0" layoutY="29.0" mnemonicParsing="false" onAction="#addBack" text="返回" />
       <Button fx:id="AddCTC" layoutX="423.0" layoutY="161.0" mnemonicParsing="false" onAction="#AddCTC" text="新增课程" />
       <Label fx:id="MsgLabel" layoutX="194.0" layoutY="165.0" prefHeight="15.0" prefWidth="123.0" />
    </children>

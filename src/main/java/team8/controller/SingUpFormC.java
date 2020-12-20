@@ -1,4 +1,7 @@
 package team8.controller;
+import team8.dao.impl.LoginImpl;
+import team8.model.Secretary;
+import team8.model.Teacher;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,12 +13,15 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import team8.dao.impl.LoginImpl;
-import team8.model.Secretary;
-import team8.model.Teacher;
 
 import java.io.IOException;
 import java.util.Random;
+
+/**
+ * 注册窗口 控制器
+ * Author:zPolari
+ * Time:2020-12-20
+ */
 
 public class SingUpFormC {
 

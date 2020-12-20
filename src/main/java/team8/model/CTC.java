@@ -47,6 +47,8 @@ public class CTC {
     public CTC() {
     }
 
+
+
     public String getUnionID() {
         return UnionID;
     }

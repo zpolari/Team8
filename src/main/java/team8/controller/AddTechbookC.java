@@ -13,13 +13,20 @@ import javafx.stage.Stage;
 import team8.dao.impl.BookTypeImpl;
 import team8.dao.impl.BooksImpl;
 import team8.model.Book;
-import team8.model.BookType;
 import team8.model.Secretary;
 import team8.model.Teacher;
 
-import javax.xml.ws.soap.Addressing;
+
 import java.io.IOException;
 import java.time.LocalDate;
+
+/**
+ * 新增/修改 教科书窗口 控制器
+ * FXML 节点：WhoLabel、BackButton、ISBNT、BNameT、AuthorT、PublishT、AddButton、MsgLabel、TypeC
+ * FXML Func:Back、addTechbook
+ * Author:zPolari
+ * Time:2020-12-18
+ */
 
 public class AddTechbookC {
 
@@ -41,8 +48,6 @@ public class AddTechbookC {
     TextField AuthorT;
     @FXML
     TextField PublishT;
-    @FXML
-    TextField PublishTimeT;
 
     @FXML
     Button AddButton;
@@ -55,7 +60,6 @@ public class AddTechbookC {
     @FXML
     void addTechbook(ActionEvent actionEvent) {
 
-
         if (TypeC.getSelectionModel().getSelectedIndex() == -1) {
             MsgLabel.setText("请选择类型");
             return;
@@ -67,22 +71,19 @@ public class AddTechbookC {
         } else {
             MsgLabel.setText(new BooksImpl().addBook(book));
         }
-        
-        
+
     }
 
 
     @FXML
-    void Back(ActionEvent actionEvent) {
+    void Back() {
 
         stage.close();
         if (teacher instanceof Teacher) {
             new TechBookForm().start(teacher);
             return;
         }
-
         new TechBookForm().start(new Secretary());
-
 
     }
 
@@ -98,8 +99,8 @@ public class AddTechbookC {
             TypeC.getSelectionModel().select(book.getType());
             AuthorT.setText(book.getAuthor());
             PublishT.setText(book.getPublisher());
-            String[] strings=book.getPublishTime().split("-");
-            dateC.setValue(LocalDate.of(Integer.parseInt(strings[0]),Integer.parseInt(strings[1]),Integer.parseInt(strings[2])));
+            String[] strings = book.getPublishTime().split("-");
+            dateC.setValue(LocalDate.of(Integer.parseInt(strings[0]), Integer.parseInt(strings[1]), Integer.parseInt(strings[2])));
 
             doWhat = "UPDATE";
 
@@ -110,23 +111,6 @@ public class AddTechbookC {
 
         ObservableList<String> list = FXCollections.observableArrayList(new BookTypeImpl().findAll());
         TypeC.setItems(list);
-
-    }
-
-    void start(Book b) {
-        book = b;
-
-        Parent root = null;
-        try {
-            root = FXMLLoader.load(getClass().getResource("/FXML/AddTechbook.fxml"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        stage.setScene(new Scene(root));
-        stage.getIcons().add(new Image("/ICON/icon.jpg"));        //设置左上角图标
-
-        stage.setResizable(false);
-        stage.show();
 
     }
 

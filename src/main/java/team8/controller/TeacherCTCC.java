@@ -35,6 +35,14 @@ public class TeacherCTCC {
     public TableView CTCT;
     public TableColumn UpdateT;
 
+    /**
+     * 教师查看任课安排 控制器
+     * Author:zPolari
+     * Time:2020-12-20
+     */
+
+
+
     public void Back(ActionEvent actionEvent) {
         new TeacherUIC().start(teacher);
         stage.close();
@@ -63,26 +71,19 @@ public class TeacherCTCC {
                         @Override
                         public void updateItem(String item, boolean empty) {
                             super.updateItem(item, empty);
-                            //按钮显示文字
                             Button button2 = new Button("修改");
-                            //设置按钮颜色
                             button2.setStyle("-fx-background-color: #00bcff;-fx-text-fill: #ffffff");
-                            //按钮点击事件
                             button2.setOnMouseClicked((col) -> {
-                                //获取list列表中的位置，进而获取列表对应的信息数据
                                 CTC ctc = list.get(getIndex());
-                                //按钮事件自己添加
                                 new UpdateCTCC().start(ctc, teacher);
                                 stage.close();
 
                             });
 
                             if (empty) {
-                                //如果此列为空默认不添加元素
                                 setText(null);
                                 setGraphic(null);
                             } else {
-                                //加载按钮
                                 this.setGraphic(button2);
                             }
                         }

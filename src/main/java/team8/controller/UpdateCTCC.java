@@ -14,16 +14,22 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import team8.dao.BooksDao;
 import team8.dao.impl.BooksImpl;
 import team8.dao.impl.CTCImpl;
 import team8.model.Book;
 import team8.model.CTC;
-import team8.model.Course;
 import team8.model.Teacher;
 
 import java.io.IOException;
 import java.util.ArrayList;
+
+/**
+ * 填写任课安排用书窗口 控制器
+ * Author:zPolari
+ * Time:2020-12-20
+ */
+
+
 
 public class UpdateCTCC {
 

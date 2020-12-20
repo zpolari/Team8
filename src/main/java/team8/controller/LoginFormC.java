@@ -16,6 +16,13 @@ import team8.model.Teacher;
 
 import java.io.IOException;
 
+/**
+ * 登录/注册 窗口 控制器
+ * Author:zPolari
+ * Time:2020-12-18
+ */
+
+
 public class LoginFormC {
     @FXML
     Label whoIsLogin;

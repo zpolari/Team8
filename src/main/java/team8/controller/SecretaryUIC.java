@@ -12,6 +12,13 @@ import team8.model.Secretary;
 
 import java.io.IOException;
 
+/**
+ * 教学秘书窗口 控制器
+ * Author:zPolari
+ * Time:2020-12-20
+ */
+
+
 public class SecretaryUIC {
     public Button AddCTCB;
     @FXML

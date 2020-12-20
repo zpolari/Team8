@@ -14,12 +14,19 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import team8.dao.impl.BooksImpl;
-import team8.dao.impl.TeacherImpl;
 import team8.model.Book;
 import team8.model.Secretary;
 import team8.model.Teacher;
 
 import java.io.IOException;
+
+/**
+ * 教科书查看窗口 控制器
+ * Author:zPolari
+ * Time:2020-12-20
+ */
+
+
 
 public class TechBookForm {
     static Stage stage = new Stage();
@@ -96,26 +103,19 @@ public class TechBookForm {
                         @Override
                         public void updateItem(String item, boolean empty) {
                             super.updateItem(item, empty);
-                            //按钮显示文字
                             Button button2 = new Button("删除");
-                            //设置按钮颜色
                             button2.setStyle("-fx-background-color: #00bcff;-fx-text-fill: #ffffff");
-                            //按钮点击事件
                             button2.setOnMouseClicked((col) -> {
-                                //获取list列表中的位置，进而获取列表对应的信息数据
                                 Book book = list.get(getIndex());
-                                //按钮事件自己添加
                                 System.out.println(new BooksImpl().delBook(book.getISBN()));
 
                                 showList();
                             });
 
                             if (empty) {
-                                //如果此列为空默认不添加元素
                                 setText(null);
                                 setGraphic(null);
                             } else {
-                                //加载按钮
                                 this.setGraphic(button2);
                             }
                         }

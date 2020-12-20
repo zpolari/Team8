@@ -15,6 +15,14 @@ import team8.model.Teacher;
 
 import java.io.IOException;
 
+/**
+ * 任课教师信息编辑窗口 控制器
+ * Author:zPolari
+ * Time:2020-12-20
+ */
+
+
+
 public class TeacherEditC {
     static Stage stage = new Stage();
     static Teacher teacher=new Teacher();

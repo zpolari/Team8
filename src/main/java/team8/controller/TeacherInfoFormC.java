@@ -13,10 +13,17 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import team8.dao.impl.TeacherImpl;
-import team8.model.Secretary;
 import team8.model.Teacher;
 
 import java.io.IOException;
+
+/**
+ * 任课教师信息查看窗口 控制器
+ * Author:zPolari
+ * Time:2020-12-20
+ */
+
+
 
 public class TeacherInfoFormC {
     static Stage stage = new Stage();
@@ -96,15 +103,10 @@ public class TeacherInfoFormC {
                         @Override
                         public void updateItem(String item, boolean empty) {
                             super.updateItem(item, empty);
-                            //按钮显示文字
                             Button button2 = new Button("删除");
-                            //设置按钮颜色
                             button2.setStyle("-fx-background-color: #00bcff;-fx-text-fill: #ffffff");
-                            //按钮点击事件
                             button2.setOnMouseClicked((col) -> {
-                                //获取list列表中的位置，进而获取列表对应的信息数据
                                 Teacher teacher = list.get(getIndex());
-                                //按钮事件自己添加
                                 if (new TeacherImpl().delTeacher(teacher.getUnionID())) {
                                     MsgLabel.setText("此老师有课程安排，无法删除");
                                     return;
@@ -114,11 +116,9 @@ public class TeacherInfoFormC {
                             });
 
                             if (empty) {
-                                //如果此列为空默认不添加元素
                                 setText(null);
                                 setGraphic(null);
                             } else {
-                                //加载按钮
                                 this.setGraphic(button2);
                             }
                         }

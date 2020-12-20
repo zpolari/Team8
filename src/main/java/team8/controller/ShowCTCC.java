@@ -1,7 +1,8 @@
 package team8.controller;
+import team8.dao.CTCDAO;
+import team8.dao.impl.CTCImpl;
+import team8.model.*;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,13 +14,16 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import team8.dao.CTCDAO;
-import team8.dao.impl.CTCImpl;
-import team8.dao.impl.TeacherImpl;
-import team8.model.*;
 
 import java.io.IOException;
-import java.util.ArrayList;
+
+
+/**
+ * 任课安排窗口 控制器
+ * Author:zPolari
+ * Time:2020-12-20
+ */
+
 
 public class ShowCTCC {
 
@@ -60,7 +64,11 @@ public class ShowCTCC {
         stage.close();
     }
 
-
+    /**
+     * 向列表中的列添加按钮
+     * Author:zPolari
+     * Time:2020-12-20
+     */
     void showTable() {
         CTCDAO ctcdao = new CTCImpl();
         ObservableList<CTC> list = FXCollections.observableArrayList(ctcdao.findByUnion("all"));
@@ -68,6 +76,7 @@ public class ShowCTCC {
         CourseT.setCellValueFactory(new PropertyValueFactory("CourseName"));
         TeacherT.setCellValueFactory(new PropertyValueFactory("TeachName"));
         BNameT.setCellValueFactory(new PropertyValueFactory("BName"));
+
 
 
         DelT.setCellFactory((col) -> {
@@ -84,7 +93,6 @@ public class ShowCTCC {
                             button2.setOnMouseClicked((col) -> {
                                 //获取list列表中的位置，进而获取列表对应的信息数据
                                 CTC ctc = list.get(getIndex());
-                                //按钮事件自己添加
                                 System.out.println(new CTCImpl().delCTC(ctc));
                                 showTable();
                             });
@@ -115,7 +123,6 @@ public class ShowCTCC {
         showTable();
     }
 
-
     void start() {
         Parent root = null;
         try {
@@ -130,7 +137,6 @@ public class ShowCTCC {
         stage.show();
     }
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 }

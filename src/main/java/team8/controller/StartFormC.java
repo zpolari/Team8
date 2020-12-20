@@ -12,6 +12,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * 启动窗口 控制器
+ * Author:zPolari
+ * Time:2020-12-20
+ */
+
+
+
 public class StartFormC {
 
     @FXML
@@ -59,7 +67,6 @@ public class StartFormC {
 //        bookType.setCellValueFactory(new PropertyValueFactory("bookType1"));
 //        list.add(bookTypeInfo);
 //        tableView.setItems(list);
-
 
 
         stage.setTitle("Hello World");                                //设置窗口名称
