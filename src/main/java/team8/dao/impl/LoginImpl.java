@@ -95,7 +95,7 @@ public class LoginImpl implements LoginDao {
     }
 
     @Override
-    public String secretarySingUp(Secretary secretary) {
+    public String secretarySignUp(Secretary secretary) {
         Connection connection = JDBCUtil.getConnection();
 
         try {
@@ -129,7 +129,7 @@ public class LoginImpl implements LoginDao {
     }
 
     @Override
-    public String teacherSingUp(Teacher teacher) {
+    public String teacherSignUp(Teacher teacher) {
         Connection connection = JDBCUtil.getConnection();
 
         try {

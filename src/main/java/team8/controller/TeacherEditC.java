@@ -52,7 +52,7 @@ public class TeacherEditC {
 
     public void Add(ActionEvent actionEvent) {
 
-        UnionIDT.setText(SingUpFormC.getUnionID(9));
+        UnionIDT.setText(SignUpFormC.getUnionID(9));
         MsgLabel.setText(new TeacherImpl().addTeacher(new Teacher(UnionIDT.getText(),AccountT.getText(),PWT.getText(),NameT.getText(),AgeT.getText(),PhoneT.getText())));
 
     }

@@ -23,11 +23,11 @@ import java.util.Random;
  * Time:2020-12-20
  */
 
-public class SingUpFormC {
+public class SignUpFormC {
 
     @FXML Label WhoLabel;
     @FXML
-    Button SingUpButton;
+    Button SignUpButton;
     @FXML
     Label MsgLabel;
     @FXML
@@ -61,7 +61,7 @@ public class SingUpFormC {
 
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("/FXML/SingUpForm.fxml"));
+            root = FXMLLoader.load(getClass().getResource("/FXML/SignUpForm.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -86,7 +86,7 @@ public class SingUpFormC {
     }
 
     @FXML
-    void SingUP(ActionEvent actionEvent) {
+    void SignUP(ActionEvent actionEvent) {
 
         if (usernameText.getText().equals("")||passwordText.getText().equals("")){
             MsgLabel.setText("请填写带*号项");
@@ -94,11 +94,11 @@ public class SingUpFormC {
         }
 
         if (whoIs.equals("教师")){
-            MsgLabel.setText(new LoginImpl().teacherSingUp(new Teacher(getUnionID(9),accountText.getText(),passwordText.getText(),usernameText.getText(),ageText.getText(),phoneText.getText())));
+            MsgLabel.setText(new LoginImpl().teacherSignUp(new Teacher(getUnionID(9),accountText.getText(),passwordText.getText(),usernameText.getText(),ageText.getText(),phoneText.getText())));
         }
 
         if (whoIs.equals("教学秘书")){
-            MsgLabel.setText(new LoginImpl().secretarySingUp(new Secretary(getUnionID(9),accountText.getText(),passwordText.getText(),usernameText.getText(),ageText.getText(),phoneText.getText())));
+            MsgLabel.setText(new LoginImpl().secretarySignUp(new Secretary(getUnionID(9),accountText.getText(),passwordText.getText(),usernameText.getText(),ageText.getText(),phoneText.getText())));
 
         }
     }

@@ -33,9 +33,9 @@ public class LoginFormC {
     @FXML
     TextField PasswordText;
     @FXML
-    Button SingUPButton;
+    Button SignUPButton;
     @FXML
-    Button SingINButton;
+    Button SignINButton;
     @FXML
     Label MsgLabel;
 
@@ -52,14 +52,14 @@ public class LoginFormC {
     }
 
     @FXML
-    void SingUP(ActionEvent actionEvent) {
+    void SignUP(ActionEvent actionEvent) {
         stage.hide();
-        new SingUpFormC().start(whoIs);
+        new SignUpFormC().start(whoIs);
 
     }
 
     @FXML
-    void SingIN(ActionEvent actionEvent) {
+    void SignIN(ActionEvent actionEvent) {
 
         if (whoIs.equals("教师")) {
             teacher = new LoginImpl().teacherLogin(UserNameText.getText(), PasswordText.getText());

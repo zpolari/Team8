@@ -12,10 +12,10 @@
         <Button fx:id="BackButton" layoutX="50.0" layoutY="44.0" mnemonicParsing="false" onAction="#Back" prefHeight="23.0" prefWidth="67.0" text="返回" />
         <Label layoutX="321.0" layoutY="110.0" text="书名" />
         <Label layoutX="321.0" layoutY="184.0" text="类型" />
-        <TextField fx:id="ISBNT" layoutX="139.0" layoutY="106.0" promptText="请输入名字" />
-        <TextField fx:id="BNameT" layoutX="375.0" layoutY="106.0" promptText="请输入年龄" />
-        <TextField fx:id="AuthorT" layoutX="139.0" layoutY="181.0" promptText="此账户将为登录名" />
-        <TextField fx:id="PublishT" layoutX="139.0" layoutY="251.0" promptText="请输入电话" />
+        <TextField fx:id="ISBNT" layoutX="139.0" layoutY="106.0" promptText="请输入ISBN" />
+        <TextField fx:id="BNameT" layoutX="375.0" layoutY="106.0" promptText="请输入书名" />
+        <TextField fx:id="AuthorT" layoutX="139.0" layoutY="181.0" promptText="请输入作者" />
+        <TextField fx:id="PublishT" layoutX="139.0" layoutY="251.0" promptText="请输入出版社" />
         <Button fx:id="AddButton" layoutX="369.0" layoutY="330.0" mnemonicParsing="false" onAction="#addTechbook" prefHeight="23.0" prefWidth="161.0" text="新增教科书" />
         <Label fx:id="MsgLabel" layoutX="369.0" layoutY="302.0" prefHeight="15.0" prefWidth="161.0" />
       <ComboBox fx:id="TypeC" layoutX="375.0" layoutY="181.0" prefHeight="23.0" prefWidth="161.0" />

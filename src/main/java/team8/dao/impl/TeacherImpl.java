@@ -45,7 +45,7 @@ public class TeacherImpl implements TeacherDAO {
     @Override
     public String addTeacher(Teacher teacher) {
 
-        return new LoginImpl().teacherSingUp(teacher);
+        return new LoginImpl().teacherSignUp(teacher);
 
     }
 

@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team8.controller.SingUpFormC">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team8.controller.SignUpFormC">
    <children>
       <Label fx:id="WhoLabel" layoutX="160.0" layoutY="55.0" prefHeight="15.0" prefWidth="264.0" text="MsgLabel" />
       <Label layoutX="71.0" layoutY="110.0" text="姓   名*" />
@@ -17,7 +17,7 @@
       <TextField fx:id="accountText" layoutX="139.0" layoutY="181.0" promptText="此账户将为登录名" />
       <TextField fx:id="passwordText" layoutX="380.0" layoutY="180.0" promptText="请输入密码" />
       <TextField fx:id="phoneText" layoutX="139.0" layoutY="251.0" promptText="请输入电话" />
-      <Button fx:id="SingUpButton" layoutX="380.0" layoutY="251.0" mnemonicParsing="false" onAction="#SingUP" prefHeight="23.0" prefWidth="161.0" text="注册" />
+      <Button fx:id="SignUpButton" layoutX="380.0" layoutY="251.0" mnemonicParsing="false" onAction="#SignUP" prefHeight="23.0" prefWidth="161.0" text="注册" />
       <Label fx:id="MsgLabel" layoutX="380.0" layoutY="219.0" prefHeight="15.0" prefWidth="161.0" text="Label" />
    </children>
 </AnchorPane>

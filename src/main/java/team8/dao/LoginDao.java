@@ -17,9 +17,9 @@ public interface LoginDao {
 
     Teacher teacherLogin(String account, String password);
 
-    String  secretarySingUp(Secretary secretary);
+    String secretarySignUp(Secretary secretary);
 
-    String teacherSingUp(Teacher teacher);
+    String teacherSignUp(Teacher teacher);
 
 
 }
