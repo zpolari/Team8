@@ -58,23 +58,11 @@ public class StartFormC {
             e.printStackTrace();
         }
 
-//        URL url = getClass().getClassLoader().getResource("ICON/icon.jpg");
-//        System.out.println(url.toExternalForm());
-//        root.setCursor(Cursor.cursor(url.toExternalForm()));
-//
-//        ObservableList<BookType> list = FXCollections.observableArrayList();
-//        BookType bookTypeInfo=new BookTypeImpl().findAll();
-//        bookType.setCellValueFactory(new PropertyValueFactory("bookType1"));
-//        list.add(bookTypeInfo);
-//        tableView.setItems(list);
-
-
         stage.setTitle("Hello World");                                //设置窗口名称
         stage.getIcons().add(new Image("/ICON/icon.jpg"));        //设置左上角图标
         stage.setScene(new Scene(root));        //设置窗口容器和大小
         stage.setResizable(false);
         stage.show();
-
 
     }
 

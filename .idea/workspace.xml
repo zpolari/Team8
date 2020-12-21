@@ -15,6 +15,7 @@
       <change afterPath="$PROJECT_DIR$/../PTA/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Team8 - 副本/Team8.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Team8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ICON/backGround.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWoke2/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWoke2/.idea/modules.xml" beforeDir="false" />
@@ -116,51 +117,7 @@
       <change beforePath="$PROJECT_DIR$/../PTA/out/production/PTA/Test.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PTA/src/Test.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/AddCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/AddCTCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/AddTechbookC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/AddTechbookC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/LoginFormC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/LoginFormC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/SecretaryUIC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/SecretaryUIC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/ShowCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/ShowCTCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/SingUpFormC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/SingUpFormC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/StartFormC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/StartFormC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherCTCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherEditC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherEditC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherInfoFormC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherInfoFormC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherUIC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherUIC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TechBookForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TechBookForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/UpdateCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/UpdateCTCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/dao/impl/BookTypeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/dao/impl/BookTypeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/team8/model/CTC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/model/CTC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/AddCTC.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/AddCTC.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/AddCTC.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/AddCTC.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/AddCTCC$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/AddCTCC$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/AddCTCC$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/AddCTCC$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/AddCTCC$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/AddCTCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/AddCTCC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/AddTechbookC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/AddTechbookC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/BooksDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/BooksDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/BookTypeImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/BookTypeImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/BooksImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/BooksImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/CTCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/CTCImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/ClassImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/ClassImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/CourseImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/CourseImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/LoginImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/LoginImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/dao/impl/TeacherImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/dao/impl/TeacherImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/jdbc/JDBCUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/jdbc/JDBCUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/BookType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/model/BookType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/CTC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/model/CTC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/ClassC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/model/ClassC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/model/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/Secretary.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/model/Secretary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/model/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestBookType.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestBookType.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestBooks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestBooks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestCTC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestCTC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestCourse.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestCourse.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestBooks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestBooks.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestCTC.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestCTC.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestCourse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestCourse.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/workspace.xml" beforeDir="false" />
@@ -321,7 +278,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/FXML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/ICON" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -329,11 +286,12 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\JAVA-Code\Team8\src\main\java\team8\controller" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\JAVA-Code\Team8\src\main\resources\ICON" />
       <recent name="F:\JAVA-Code\Team8\src\main\resources\FXML" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\JAVA-Code\Team8\src\main\java\team8\controller" />
       <recent name="F:\JAVA-Code\Team8\src\main\resources\FXML" />
     </key>
   </component>
@@ -517,7 +475,7 @@
       <workItem from="1608197905042" duration="17474000" />
       <workItem from="1608215539218" duration="1625000" />
       <workItem from="1608372974266" duration="6915000" />
-      <workItem from="1608461294650" duration="1024000" />
+      <workItem from="1608461294650" duration="3121000" />
     </task>
     <servers />
   </component>
