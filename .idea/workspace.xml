@@ -15,15 +15,6 @@
       <change afterPath="$PROJECT_DIR$/../PTA/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Team8 - 副本/Team8.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Team8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/CTC.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/CTCEdit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/addTeacher.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/loginForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/secretaryUI.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/startForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/teacherEdit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/teacherUI.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/CSS/textbook.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWoke2/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWoke2/.idea/modules.xml" beforeDir="false" />
@@ -129,6 +120,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/LoginFormC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/LoginFormC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/SecretaryUIC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/SecretaryUIC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/ShowCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/ShowCTCC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/SignUpFormC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/SignUpFormC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/StartFormC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/StartFormC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherCTCC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherEditC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherEditC.java" afterDir="false" />
@@ -136,25 +128,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherUIC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TeacherUIC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/TechBookForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/TechBookForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/team8/controller/UpdateCTCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/team8/controller/UpdateCTCC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/LoginForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/StartForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/StartForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/TeacherEditForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/TeacherEditForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/TechBookForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/TechBookForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/LoginForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/StartForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/StartForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/TeacherEditForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/TeacherEditForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FXML/TechBookForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FXML/TechBookForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/AddTechbookC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/AddTechbookC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/LoginFormC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/LoginFormC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/SecretaryUIC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/SecretaryUIC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/ShowCTCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/ShowCTCC.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/StartFormC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/StartFormC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TeacherCTCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TeacherCTCC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TeacherEditC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TeacherEditC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TeacherUIC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TeacherUIC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TechBookForm$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TechBookForm$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/TechBookForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/TechBookForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/team8/controller/UpdateCTCC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/team8/controller/UpdateCTCC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/相关文件/info.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/相关文件/info.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/相关文件/~$报告书new.doc" beforeDir="false" afterPath="$PROJECT_DIR$/相关文件/~$报告书new.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/相关文件/报告书.doc" beforeDir="false" afterPath="$PROJECT_DIR$/相关文件/报告书.doc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../homework01/.idea/workspace.xml" beforeDir="false" />
@@ -514,7 +491,7 @@
       <workItem from="1608372974266" duration="6915000" />
       <workItem from="1608461294650" duration="3121000" />
       <workItem from="1608556688665" duration="2312000" />
-      <workItem from="1609036853852" duration="9014000" />
+      <workItem from="1609036853852" duration="15045000" />
     </task>
     <servers />
   </component>
@@ -554,22 +531,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609045822331" />
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1609049833707">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1609060608752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609049833707" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1609049833706">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609060608752" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1609060608752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609049833706" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1609049833706">
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609060608752" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1609060608752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609049833706" />
-    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1609049833706">
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609060608752" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1609060608752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609049833706" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609060608752" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1608215522896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -614,9 +591,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607835124420" />
-    <state x="401" y="304" width="672" height="678" key="search.everywhere.popup" timestamp="1609046429261">
+    <state x="401" y="304" width="672" height="678" key="search.everywhere.popup" timestamp="1609060393747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="401" y="304" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609046429261" />
+    <state x="401" y="304" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609060393747" />
   </component>
 </project>

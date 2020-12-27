@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -28,6 +29,7 @@ import java.util.Date;
 
 public class StartFormC {
 
+    static boolean GlobalSetResizable = false;
     @FXML
     Button TeachLoginButton;
 
@@ -72,6 +74,8 @@ public class StartFormC {
         //设置循环次数 INDEFINITE为-1  即无限更新
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play();
+
+
     }
 
     public void start() {
@@ -88,7 +92,7 @@ public class StartFormC {
         stage.setTitle("人员登录选择窗");                                //设置窗口名称
         stage.getIcons().add(new Image("/ICON/icon.jpg"));        //设置左上角图标
         stage.setScene(new Scene(root));        //设置窗口容器和大小
-        stage.setResizable(false);
+        stage.setResizable(GlobalSetResizable);
         stage.show();
 
     }

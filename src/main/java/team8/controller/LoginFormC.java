@@ -114,7 +114,7 @@ public class LoginFormC {
         stage.setScene(new Scene(root));
         stage.getIcons().add(new Image("/ICON/icon.jpg"));        //设置左上角图标
 
-        stage.setResizable(false);
+        stage.setResizable(StartFormC.GlobalSetResizable);
         stage.show();
 
     }
