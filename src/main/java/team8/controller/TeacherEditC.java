@@ -92,6 +92,7 @@ public class TeacherEditC {
     void start(Teacher t,boolean b){
         teacher=t;
         aBoolean=b;
+        stage.setTitle("教师信息编辑窗");
 
         Parent root = null;
         try {

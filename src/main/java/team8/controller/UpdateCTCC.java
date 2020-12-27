@@ -116,6 +116,7 @@ public class UpdateCTCC {
     void start(CTC c, Teacher t) {
         ctc = c;
         teacher = t;
+        stage.setTitle("选择教科书");
 
         Parent root = null;
         try {

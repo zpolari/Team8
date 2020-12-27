@@ -58,6 +58,7 @@ public class SignUpFormC {
 
     public void start(String who) {
         whoIs=who;
+        stage.setTitle("注册窗口");
 
         Parent root = null;
         try {

@@ -58,7 +58,7 @@ public class StartFormC {
             e.printStackTrace();
         }
 
-        stage.setTitle("Hello World");                                //设置窗口名称
+        stage.setTitle("人员登录选择窗");                                //设置窗口名称
         stage.getIcons().add(new Image("/ICON/icon.jpg"));        //设置左上角图标
         stage.setScene(new Scene(root));        //设置窗口容器和大小
         stage.setResizable(false);

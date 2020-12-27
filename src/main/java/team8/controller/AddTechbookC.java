@@ -118,8 +118,11 @@ public class AddTechbookC {
         book = b;
         teacher = t;
         Parent root = null;
+        stage.setTitle("教科书管理");
+
         try {
             root = FXMLLoader.load(getClass().getResource("/FXML/AddTechbook.fxml"));
+
         } catch (IOException e) {
             e.printStackTrace();
         }

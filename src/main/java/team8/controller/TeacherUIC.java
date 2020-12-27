@@ -67,6 +67,8 @@ public class TeacherUIC {
 
     void start(Teacher t) {
         teacher = t;
+        stage.setTitle("任课教师菜单");
+
         Parent root = null;
         try {
             root = FXMLLoader.load(getClass().getResource("/FXML/TeacherUI.fxml"));

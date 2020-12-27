@@ -141,6 +141,8 @@ public class TeacherInfoFormC {
 
     void start() {
         Parent root = null;
+        stage.setTitle("教师信息查看窗");
+
         try {
             root = FXMLLoader.load(getClass().getResource("/FXML/TeacherInfoForm.fxml"));
         } catch (IOException e) {

@@ -101,6 +101,7 @@ public class LoginFormC {
     public void start(String who) {
 
         whoIs = who;
+        stage.setTitle("登录窗口");
 
         Parent root = null;
         try {

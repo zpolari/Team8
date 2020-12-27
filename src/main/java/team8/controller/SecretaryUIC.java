@@ -45,6 +45,8 @@ public class SecretaryUIC {
 
     void start() {
         Parent root = null;
+        stage.setTitle("教学秘书菜单");
+
         try {
             root = FXMLLoader.load(getClass().getResource("/FXML/SecretaryUI.fxml"));
         } catch (IOException e) {

@@ -124,6 +124,8 @@ public class ShowCTCC {
     }
 
     void start() {
+        stage.setTitle("任课安排查看");
+
         Parent root = null;
         try {
             root = FXMLLoader.load(getClass().getResource("/FXML/ShowCTC.fxml"));

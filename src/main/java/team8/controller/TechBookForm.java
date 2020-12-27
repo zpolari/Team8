@@ -137,6 +137,8 @@ public class TechBookForm {
     }
 
     void start(Object o) {
+        stage.setTitle("教科书查看窗");
+
         whoUpMe = o;
         Parent root = null;
         try {

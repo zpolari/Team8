@@ -105,6 +105,7 @@ public class TeacherCTCC {
 
     void start(Teacher t) {
         teacher = t;
+        stage.setTitle("新增教师窗口");
 
         Parent root = null;
         try {
