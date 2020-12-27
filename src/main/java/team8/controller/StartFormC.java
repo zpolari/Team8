@@ -1,6 +1,9 @@
 package team8.controller;
 
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,15 +12,18 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * 启动窗口 控制器
  * Author:zPolari
  * Time:2020-12-20
  */
-
 
 
 public class StartFormC {
@@ -35,21 +41,40 @@ public class StartFormC {
 
 
     @FXML
-    void TeachLogin(){
+    void TeachLogin() {
         stage.close();
         new LoginFormC().start("教师");
 
     }
 
     @FXML
-    void SecretaryLogin(){
+    void SecretaryLogin() {
         stage.close();
 
         new LoginFormC().start("教学秘书");
     }
 
 
-    public void start()   {
+    /**
+     * 方法作用：给主界面上的TimeLabel 实时更新当前时间
+     * Author:zPolari
+     * Time:2020-12-27
+     */
+    @FXML
+    public void initialize() {
+        //新建一个时间格式件器
+        DateFormat df = new SimpleDateFormat("当前时间：yyyy年MM月dd日 hh:mm:ss");
+        //新建一个关键帧动画
+        //关键帧间隔500毫秒，事务：更新TimeLabel的Text为当前时间
+        Timeline animation = new Timeline(new KeyFrame(Duration.millis(500), e -> {
+            TimeLabel.setText(df.format(new Date()));
+        }));
+        //设置循环次数 INDEFINITE为-1  即无限更新
+        animation.setCycleCount(Timeline.INDEFINITE);
+        animation.play();
+    }
+
+    public void start() {
 
         Parent root = null;
         try {
