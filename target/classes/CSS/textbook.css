@@ -1,0 +1,16 @@
+.button:hover {
+    -fx-background-color: lightskyblue;
+}
+
+.button {
+
+    -fx-background-color: darkturquoise;
+}
+
+#AnchorPane {
+    -fx-font-family: "微软雅黑";
+    -fx-background-image: url(../ICON/textbook.jpg);
+    -fx-background-size: stretch stretch;
+    -fx-background-position: center center;
+}
+

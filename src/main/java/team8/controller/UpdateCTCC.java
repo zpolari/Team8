@@ -61,6 +61,10 @@ public class UpdateCTCC {
     @FXML
     void save(ActionEvent actionEvent) {
 
+        if (ISBNC.getSelectionModel().getSelectedIndex()==-1){
+            MsgLabel.setText("请选择对应教科书");
+            return;
+        }
         ctc.setISBN(ISBNC.getSelectionModel().getSelectedItem().toString());
         MsgLabel.setText(new CTCImpl().updateCTC(ctc,ctc));
 
@@ -124,6 +128,7 @@ public class UpdateCTCC {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        root.getStylesheets().add(getClass().getResource("/CSS/CTCEdit.css").toExternalForm());
         stage.setScene(new Scene(root));
         stage.getIcons().add(new Image("/ICON/icon.jpg"));        //设置左上角图标
 

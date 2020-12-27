@@ -65,9 +65,9 @@ public class TeacherEditC {
 
     @FXML
     void initialize(){
-        TitleLabel.setText("修改："+teacher.getName()+"  老师信息");
 
         if (teacher.getUnionID()==null){
+            TitleLabel.setText("新增老师信息");
 
             SaveB.setVisible(false);
             UnionIDL.setVisible(false);
@@ -75,6 +75,7 @@ public class TeacherEditC {
 
         }else {
             AddB.setVisible(false);
+            TitleLabel.setText("修改："+teacher.getName()+"  老师信息");
 
             UnionIDT.setEditable(false);
             UnionIDT.setText(teacher.getUnionID());
@@ -100,6 +101,7 @@ public class TeacherEditC {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        root.getStylesheets().add(getClass().getResource("/CSS/teacherEdit.css").toExternalForm());
         stage.setScene(new Scene(root));
         stage.getIcons().add(new Image("/ICON/icon.jpg"));        //设置左上角图标
 

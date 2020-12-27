@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="591.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team8.controller.TechBookForm">
+<AnchorPane fx:id="AnchorPane" prefHeight="591.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team8.controller.TechBookForm">
     <children>
         <TableView fx:id="TechBook" layoutX="30.0" layoutY="73.0" prefHeight="471.0" prefWidth="787.0">
             <columns>

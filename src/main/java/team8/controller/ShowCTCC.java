@@ -157,6 +157,7 @@ public class ShowCTCC {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        root.getStylesheets().add(getClass().getResource("/CSS/CTC.css").toExternalForm());
         stage.setScene(new Scene(root));
         stage.getIcons().add(new Image("/ICON/icon.jpg"));        //设置左上角图标
 

@@ -159,9 +159,12 @@ public class AddCTCC {
             Parent parent = FXMLLoader.load(getClass().getResource("/FXML/AddCTC.fxml"));
             stage.setScene(new Scene(parent));
             stage.setTitle("添加任课安排");
+            parent.getStylesheets().add(getClass().getResource("/CSS/CTCEdit.css").toExternalForm());
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         stage.setOnCloseRequest(event -> {
             new ShowCTCC().start();
             stage.close();

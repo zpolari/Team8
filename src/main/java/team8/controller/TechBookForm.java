@@ -131,11 +131,6 @@ public class TechBookForm {
                                         infoTell.showAndWait();
                                     }
                                 }
-
-
-
-
-
                                 showList();
                             });
 
@@ -173,6 +168,7 @@ public class TechBookForm {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        root.getStylesheets().add(getClass().getResource("/CSS/textbook.css").toExternalForm());
         stage.setScene(new Scene(root));
         stage.getIcons().add(new Image("/ICON/icon.jpg"));        //设置左上角图标
 

@@ -66,6 +66,7 @@ public class SignUpFormC {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         stage.setScene(new Scene(root));
         stage.getIcons().add(new Image("/ICON/icon.jpg"));        //设置左上角图标
 
