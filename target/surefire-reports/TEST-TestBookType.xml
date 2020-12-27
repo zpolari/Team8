@@ -30,7 +30,7 @@
     <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="GBK"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\program files\java\jdk1.8.0_92\bin;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\quicktime\qtsystem\;c:\program files\intel\wifi\bin\;c:\program files\common files\intel\wirelesscommon\;c:\android;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\wbem;C:\WINDOWS\system32\windowspowershell\v1.0\;C:\WINDOWS\system32\openssh\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Android;C:\Windows\System32;C:\Go\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_111\jre\bin;C:\Program Files\Java\jdk1.8.0_111\bin;C:\mingw64\bin;C:\MinGW\bin;C:\Program Files (x86)\Graphviz2.38\bin;F:\工具软件\apache-jmeter-5.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3\plugins\maven\lib\maven3\bin;C:\Users\Administrator\go\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\program files\java\jdk1.8.0_92\bin;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\quicktime\qtsystem\;c:\program files\intel\wifi\bin\;c:\program files\common files\intel\wirelesscommon\;c:\android;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\wbem;C:\WINDOWS\system32\windowspowershell\v1.0\;C:\WINDOWS\system32\openssh\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Android;C:\Windows\System32;C:\Go\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_111\jre\bin;C:\Program Files\Java\jdk1.8.0_111\bin;C:\mingw64\bin;C:\MinGW\bin;C:\Program Files (x86)\Graphviz2.38\bin;F:\工具软件\apache-jmeter-5.3\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.3\plugins\maven\lib\maven3\bin;C:\Program Files (x86)\Inno Setup 6;C:\Users\Administrator\go\bin;."/>
     <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3\plugins\maven\lib\maven3/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_111\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3 test"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3 com.zenjava:javafx-maven-plugin:8.8.3:native"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>

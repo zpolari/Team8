@@ -54,7 +54,7 @@ public class TeacherUIC {
 
     @FXML
     void UpdateInfo(ActionEvent actionEvent) {
-
+        stage.close();
         new TeacherEditC().start(teacher, false);
 
     }

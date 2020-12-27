@@ -47,6 +47,8 @@ public class TeacherEditC {
         stage.close();
         if (aBoolean){
             new TeacherInfoFormC().start();
+        }else {
+            new TeacherUIC().start(teacher);
         }
     }
 
@@ -58,8 +60,8 @@ public class TeacherEditC {
     }
 
     public void Save(ActionEvent actionEvent) {
-
-        MsgLabel.setText(new TeacherImpl().updateTeacher(new Teacher(UnionIDT.getText(),AccountT.getText(),PWT.getText(),NameT.getText(),AgeT.getText(),PhoneT.getText())).toString());
+        teacher=new Teacher(UnionIDT.getText(),AccountT.getText(),PWT.getText(),NameT.getText(),AgeT.getText(),PhoneT.getText());
+        MsgLabel.setText(new TeacherImpl().updateTeacher(teacher));
 
     }
 

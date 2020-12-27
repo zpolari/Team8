@@ -4,7 +4,6 @@ F:\JAVA-Code\Team8\src\main\java\team8\dao\impl\CTCImpl.java
 F:\JAVA-Code\Team8\src\main\java\team8\controller\LoginFormC.java
 F:\JAVA-Code\Team8\src\main\java\team8\dao\impl\CourseImpl.java
 F:\JAVA-Code\Team8\src\main\java\team8\dao\impl\TeacherImpl.java
-F:\JAVA-Code\Team8\src\main\java\team8\controller\SingUpFormC.java
 F:\JAVA-Code\Team8\src\main\java\team8\controller\ShowCTCC.java
 F:\JAVA-Code\Team8\src\main\java\team8\dao\impl\ClassImpl.java
 F:\JAVA-Code\Team8\src\main\java\team8\dao\impl\BookTypeImpl.java
@@ -14,6 +13,7 @@ F:\JAVA-Code\Team8\src\main\java\team8\model\BookType.java
 F:\JAVA-Code\Team8\src\main\java\team8\model\Course.java
 F:\JAVA-Code\Team8\src\main\java\team8\model\Secretary.java
 F:\JAVA-Code\Team8\src\main\java\team8\dao\BookTypeDAO.java
+F:\JAVA-Code\Team8\src\main\java\team8\controller\SignUpFormC.java
 F:\JAVA-Code\Team8\src\main\java\team8\controller\TeacherInfoFormC.java
 F:\JAVA-Code\Team8\src\main\java\team8\dao\CourseDAO.java
 F:\JAVA-Code\Team8\src\main\java\team8\controller\TeacherUIC.java
