@@ -18,7 +18,7 @@ public interface CTCDAO {
 
     String addCTC(CTC ctc);
 
-    String delCTC(CTC ctc);
+    boolean delCTC(CTC ctc);
 
     String updateCTC(CTC old, CTC newC);
 

@@ -17,14 +17,14 @@ public class Book {
 
         @Override
         public String toString() {
-            return "Book{" +
-                    "ISBN='" + ISBN + '\'' +
-                    ", BName='" + BName + '\'' +
-                    ", Author='" + Author + '\'' +
-                    ", Type='" + Type + '\'' +
-                    ", Publisher='" + Publisher + '\'' +
-                    ", PublishTime='" + PublishTime + '\'' +
-                    '}';
+            return "教科书信息{" +
+                    "\n ISBN=" + ISBN +
+                    "\n 教材名  =  " + BName +
+                    "\n 作者  =  " + Author +
+                    "\n 类型  =  " + Type +
+                    "\n 出版社  =  " + Publisher +
+                    "\n 出版时间  =  " + PublishTime +
+                    "\n }";
         }
 
         public Book() {

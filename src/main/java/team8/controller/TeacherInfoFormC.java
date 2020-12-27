@@ -16,6 +16,7 @@ import team8.dao.impl.TeacherImpl;
 import team8.model.Teacher;
 
 import java.io.IOException;
+import java.util.Optional;
 
 /**
  * 任课教师信息查看窗口 控制器
@@ -105,14 +106,40 @@ public class TeacherInfoFormC {
                             super.updateItem(item, empty);
                             Button button2 = new Button("删除");
                             button2.setStyle("-fx-background-color: #00bcff;-fx-text-fill: #ffffff");
+
                             button2.setOnMouseClicked((col) -> {
                                 Teacher teacher = list.get(getIndex());
-                                if (new TeacherImpl().delTeacher(teacher.getUnionID())) {
-                                    MsgLabel.setText("此老师有课程安排，无法删除");
-                                    return;
+
+                                Alert deleteCheck = new Alert(Alert.AlertType.CONFIRMATION);
+                                deleteCheck.setTitle("确认删除");
+                                deleteCheck.setHeaderText("请确认以下教师信息后选择是否删除");
+                                deleteCheck.setContentText(teacher.toString());
+
+                                Optional<ButtonType> result = deleteCheck.showAndWait();
+                                if (result.get() == ButtonType.OK){
+
+                                    if (new TeacherImpl().delTeacher(teacher.getUnionID())) {
+                                        MsgLabel.setText("此老师有课程安排，无法删除");
+                                        Alert infoTell = new Alert(Alert.AlertType.WARNING);
+                                        infoTell.setTitle("提示信息");
+                                        infoTell.setHeaderText("删除此任课教师失败");
+                                        infoTell.setContentText("原因：此老师有课程安排，无法删除");
+                                        infoTell.showAndWait();
+                                        return;
+                                    }else {
+                                        MsgLabel.setText("删除成功");
+                                        Alert infoTell = new Alert(Alert.AlertType.WARNING);
+                                        infoTell.setTitle("提示信息");
+                                        infoTell.setHeaderText("删除此任课教师成功");
+                                        infoTell.setContentText("删除成功"+teacher.toString());
+                                        infoTell.showAndWait();
+                                    }
+
+                                    showList();
                                 }
 
-                                showList();
+
+
                             });
 
                             if (empty) {

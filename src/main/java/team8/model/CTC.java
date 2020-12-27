@@ -34,14 +34,14 @@ public class CTC {
 
     @Override
     public String toString() {
-        return "CTC{" +
-                "ClassName='" + ClassName + '\'' +
-                ", CourseName='" + CourseName + '\'' +
-                ", UnionID='" + UnionID + '\'' +
-                ", TeachName='" + TeachName + '\'' +
-                ", ISBN='" + ISBN + '\'' +
-                ", BName='" + BName + '\'' +
-                '}';
+        return "任课安排{" +
+                "\n 班级名称  =  " + ClassName +
+                "\n 课程名  =  " + CourseName +
+                "\n 教师ID  =  " + UnionID +
+                "\n 教师名称  =  " + TeachName +
+                "\n ISBN  =  " + ISBN +
+                "\n 教材名  =  " + BName +
+                "\n }";
     }
 
     public CTC() {

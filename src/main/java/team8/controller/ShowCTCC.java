@@ -16,6 +16,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Optional;
 
 
 /**
@@ -93,7 +94,31 @@ public class ShowCTCC {
                             button2.setOnMouseClicked((col) -> {
                                 //获取list列表中的位置，进而获取列表对应的信息数据
                                 CTC ctc = list.get(getIndex());
-                                System.out.println(new CTCImpl().delCTC(ctc));
+
+                                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                                alert.setTitle("任课安排删除确认");
+                                alert.setHeaderText("请确认以下任课安排后选择是否删除");
+                                alert.setContentText(ctc.toString());
+
+                                Optional<ButtonType> result = alert.showAndWait();
+                                if (result.get() == ButtonType.OK){
+
+                                    if(new CTCImpl().delCTC(ctc)){
+                                        Alert infoTell = new Alert(Alert.AlertType.WARNING);
+                                        infoTell.setTitle("提示信息");
+                                        infoTell.setHeaderText("删除此任课安排成功");
+                                        infoTell.setContentText("删除成功"+ctc.toString());
+                                        infoTell.showAndWait();
+                                    }else {
+                                        Alert infoTell = new Alert(Alert.AlertType.WARNING);
+                                        infoTell.setTitle("提示信息");
+                                        infoTell.setHeaderText("删除此任课失败");
+                                        infoTell.setContentText("原因：请咨询管理员");
+                                        infoTell.showAndWait();
+                                    }
+
+                                }
+
                                 showTable();
                             });
 

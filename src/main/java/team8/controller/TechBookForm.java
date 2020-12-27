@@ -19,6 +19,7 @@ import team8.model.Secretary;
 import team8.model.Teacher;
 
 import java.io.IOException;
+import java.util.Optional;
 
 /**
  * 教科书查看窗口 控制器
@@ -107,7 +108,33 @@ public class TechBookForm {
                             button2.setStyle("-fx-background-color: #00bcff;-fx-text-fill: #ffffff");
                             button2.setOnMouseClicked((col) -> {
                                 Book book = list.get(getIndex());
-                                System.out.println(new BooksImpl().delBook(book.getISBN()));
+
+
+                                Alert deleteCheck = new Alert(Alert.AlertType.CONFIRMATION);
+                                deleteCheck.setTitle("教科书删除确认");
+                                deleteCheck.setHeaderText("请确认以下教科书信息后选择是否删除");
+                                deleteCheck.setContentText(book.toString());
+
+                                Optional<ButtonType> result = deleteCheck.showAndWait();
+                                if (result.get() == ButtonType.OK){
+                                    if (new BooksImpl().delBook(book.getISBN())){
+                                        Alert infoTell = new Alert(Alert.AlertType.WARNING);
+                                        infoTell.setTitle("提示信息");
+                                        infoTell.setHeaderText("删除此教科书成功");
+                                        infoTell.setContentText("删除成功"+book.toString());
+                                        infoTell.showAndWait();
+                                    }else {
+                                        Alert infoTell = new Alert(Alert.AlertType.WARNING);
+                                        infoTell.setTitle("提示信息");
+                                        infoTell.setHeaderText("删除此教科书失败");
+                                        infoTell.setContentText("原因：此教科书有课程使用，无法删除");
+                                        infoTell.showAndWait();
+                                    }
+                                }
+
+
+
+
 
                                 showList();
                             });

@@ -89,7 +89,7 @@ public class BooksImpl implements BooksDao {
     }
 
     @Override
-    public String delBook(String isbn) {
+    public boolean delBook(String isbn) {
 
         Connection connection = JDBCUtil.getConnection();
 
@@ -99,11 +99,11 @@ public class BooksImpl implements BooksDao {
             ps.execute();
         } catch (Exception e) {
             e.printStackTrace();
-            return "删除教科书失败";
+            return false;
         } finally {
             JDBCUtil.close(rs, ps, connection);
         }
-        return "删除教科书成功";
+        return true;
 
     }
 

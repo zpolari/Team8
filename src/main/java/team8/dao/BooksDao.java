@@ -17,7 +17,7 @@ public interface BooksDao {
 
     String addBook(Book book);
 
-    String delBook(String isbn);
+    boolean delBook(String isbn);
 
     String updateBook(Book book);
 

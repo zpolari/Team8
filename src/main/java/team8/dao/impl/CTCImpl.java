@@ -71,7 +71,7 @@ public class CTCImpl implements CTCDAO {
     }
 
     @Override
-    public String delCTC(CTC ctc) {
+    public boolean delCTC(CTC ctc) {
         Connection connection = JDBCUtil.getConnection();
 
         try {
@@ -82,9 +82,9 @@ public class CTCImpl implements CTCDAO {
             ps.execute();
         } catch (Exception e) {
             e.printStackTrace();
-            return "删除任课安排失败";
+            return false;
         }
-        return "删除任课安排成功";
+        return true;
     }
 
     @Override

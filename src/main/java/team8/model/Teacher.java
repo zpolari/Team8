@@ -29,14 +29,14 @@ public class Teacher {
 
     @Override
     public String toString() {
-        return "Teacher{" +
-                "UnionID='" + UnionID + '\'' +
-                ", Account='" + Account + '\'' +
-                ", Password='" + Password + '\'' +
-                ", Name='" + Name + '\'' +
-                ", Age='" + Age + '\'' +
-                ", Telephone='" + Telephone + '\'' +
-                '}';
+        return "教师信息  {" +
+                "\n唯一ID  =  " + UnionID +
+                " \n账户名  =  " + Account +
+                " \n登录密码  =  " + Password +
+                " \n姓名  =  " + Name +
+                " \n年龄  =  " + Age +
+                " \n电话  =  " + Telephone +
+                "\n}";
     }
 
     public String getUnionID() {
