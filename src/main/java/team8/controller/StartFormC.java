@@ -4,6 +4,8 @@ package team8.controller;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -29,7 +31,9 @@ import java.util.Date;
 
 public class StartFormC {
 
-    static boolean GlobalSetResizable = false;
+    static boolean GlobalSetResizable = true;
+    @FXML
+    Label lblTitle;
     @FXML
     Button TeachLoginButton;
 
@@ -74,6 +78,35 @@ public class StartFormC {
         //设置循环次数 INDEFINITE为-1  即无限更新
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play();
+
+        stage.widthProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+
+                TeachLoginButton.setLayoutX(newValue.intValue()*0.2083);
+                SecretaryLoginButton.setLayoutX(newValue.intValue()*0.6466);
+                TimeLabel.setLayoutX(newValue.intValue()*0.5016);
+                lblTitle.setLayoutX(newValue.intValue()*0.167);
+
+                TeachLoginButton.setMinWidth(64*(newValue.doubleValue()/600));
+                SecretaryLoginButton.setMinWidth(64*(newValue.doubleValue()/600));
+                TimeLabel.setMinWidth(401*(newValue.doubleValue()/600));
+            }
+        });
+
+        stage.heightProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+
+                TeachLoginButton.setLayoutY(newValue.intValue()*0.4725);
+                SecretaryLoginButton.setLayoutY(newValue.intValue()*0.4725);
+                TimeLabel.setLayoutY(newValue.intValue()*0.6825);
+                lblTitle.setLayoutY(newValue.intValue()*0.175);
+                TeachLoginButton.setMinHeight(23*(newValue.doubleValue()/400));
+                SecretaryLoginButton.setMinHeight(23*(newValue.doubleValue()/400));
+                TimeLabel.setMinHeight(61*(newValue.doubleValue()/400));
+            }
+        });
 
 
     }

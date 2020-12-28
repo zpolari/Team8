@@ -5,19 +5,19 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team8.controller.SignUpFormC">
    <children>
-      <Label fx:id="WhoLabel" layoutX="160.0" layoutY="55.0" prefHeight="15.0" prefWidth="264.0" text="MsgLabel" />
-      <Label layoutX="71.0" layoutY="110.0" text="姓   名*" />
-      <Label layoutX="71.0" layoutY="184.0" text="登 录  名*" />
-      <Label layoutX="71.0" layoutY="255.0" text="联系电话" />
-      <Button fx:id="BackButton" layoutX="62.0" layoutY="51.0" mnemonicParsing="false" onAction="#Back" prefHeight="23.0" prefWidth="67.0" text="返回" />
-      <Label layoutX="321.0" layoutY="110.0" text="年      龄" />
-      <Label layoutX="321.0" layoutY="184.0" text="登录密码*" />
+      <Label fx:id="WhoLabel" layoutX="160.0" layoutY="47.0" prefHeight="30.0" prefWidth="264.0" text="MsgLabel" />
+      <Label layoutX="69.0" layoutY="103.0" prefHeight="30.0" prefWidth="54.0" text="姓   名*" />
+      <Label layoutX="62.0" layoutY="181.0" prefHeight="23.0" prefWidth="84.0" text="登 录  名*" />
+      <Label layoutX="62.0" layoutY="243.0" prefHeight="40.0" prefWidth="67.0" text="联系电话" />
+      <Button fx:id="BackButton" layoutX="62.0" layoutY="55.0" mnemonicParsing="false" onAction="#Back" prefHeight="30.0" prefWidth="67.0" text="返回" />
+      <Label layoutX="321.0" layoutY="103.0" prefHeight="30.0" prefWidth="54.0" text="年      龄" />
+      <Label layoutX="315.0" layoutY="178.0" prefHeight="30.0" prefWidth="67.0" text="登录密码*" />
       <TextField fx:id="usernameText" layoutX="139.0" layoutY="106.0" promptText="请输入名字" />
       <TextField fx:id="ageText" layoutX="380.0" layoutY="106.0" promptText="请输入年龄" />
       <TextField fx:id="accountText" layoutX="139.0" layoutY="181.0" promptText="此账户将为登录名" />
       <TextField fx:id="passwordText" layoutX="380.0" layoutY="180.0" promptText="请输入密码" />
       <TextField fx:id="phoneText" layoutX="139.0" layoutY="251.0" promptText="请输入电话" />
-      <Button fx:id="SignUpButton" layoutX="380.0" layoutY="251.0" mnemonicParsing="false" onAction="#SignUP" prefHeight="23.0" prefWidth="161.0" text="注册" />
-      <Label fx:id="MsgLabel" layoutX="380.0" layoutY="219.0" prefHeight="15.0" prefWidth="161.0" text="Label" />
+      <Button fx:id="SignUpButton" layoutX="380.0" layoutY="251.0" mnemonicParsing="false" onAction="#SignUP" prefHeight="40.0" prefWidth="161.0" text="注册" />
+      <Label fx:id="MsgLabel" layoutX="380.0" layoutY="219.0" prefHeight="23.0" prefWidth="161.0" text="Label" />
    </children>
 </AnchorPane>

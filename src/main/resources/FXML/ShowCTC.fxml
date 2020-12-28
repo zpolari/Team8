@@ -17,7 +17,7 @@
                </columns></TableColumn>
         </columns>
       </TableView>
-      <Button fx:id="BackB" layoutX="66.0" layoutY="31.0" mnemonicParsing="false" onAction="#Back" text="返回" />
-      <Button fx:id="AddCTCB" layoutX="608.0" layoutY="31.0" mnemonicParsing="false" onAction="#OpenAddCTC" text="新增任课安排" />
+      <Button fx:id="BackB" layoutX="66.0" layoutY="31.0" mnemonicParsing="false" onAction="#Back" prefHeight="32.0" prefWidth="47.0" text="返回" />
+      <Button fx:id="AddCTCB" layoutX="601.0" layoutY="31.0" mnemonicParsing="false" onAction="#OpenAddCTC" prefHeight="32.0" prefWidth="95.0" text="新增任课安排" />
    </children>
 </AnchorPane>

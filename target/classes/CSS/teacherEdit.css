@@ -1,3 +1,15 @@
 .root{
     -fx-background-image: url(../ICON/exitBackGround.jpg);
 }
+
+.button:hover {
+    -fx-background-color: darkgreen;
+    -fx-font-size: 16px;
+
+}
+
+.button {
+    -fx-background-color: lightgreen;
+    -fx-font-size: 16px;
+
+}
