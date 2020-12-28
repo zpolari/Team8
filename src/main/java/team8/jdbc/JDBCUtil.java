@@ -16,9 +16,15 @@ import java.sql.Statement;
 
 public class JDBCUtil {
     static Connection conn = null;
-    static final String DB_URL = "jdbc:mysql://116.255.186.125:3306/test";
-    static final String USER = "db_ssg_MPM";
-    static final String PASS = "jHsx2LeRSYk4Zy6W";
+//    static final String DB_URL = "jdbc:mysql://116.255.186.125:3306/test";
+//    static final String USER = "db_ssg_MPM";
+//    static final String PASS = "jHsx2LeRSYk4Zy6W";
+
+    static final String DB_URL = "jdbc:mysql://192.168.1.168:3306/JCGL";
+    static final String USER = "root";
+    static final String PASS = "root";
+
+
 
     public static Connection getConnection() {
         try {
