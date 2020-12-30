@@ -65,7 +65,8 @@ public class AddTechbookC {
             return;
         }
         Book book = new Book(ISBNT.getText(), BNameT.getText(), AuthorT.getText(), TypeC.getSelectionModel().getSelectedItem().toString(), PublishT.getText(), dateC.getValue().toString());
-
+        System.out.println(doWhat);
+        System.out.println(book.toString());
         if (doWhat.equals("UPDATE")) {
             MsgLabel.setText(new BooksImpl().updateBook(book));
         } else {

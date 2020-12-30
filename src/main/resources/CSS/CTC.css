@@ -4,14 +4,12 @@
 
 #BackB{
     -fx-background-color: darkturquoise;
-    -fx-font-size: 16px;
     -fx-font-weight: bolder;
     -fx-text-fill: darkslategray;
 }
 
 #AddCTCB{
     -fx-background-color: darkturquoise;
-    -fx-font-size: 16px;
     -fx-font-weight: bolder;
     -fx-text-fill: darkslategray;
 }

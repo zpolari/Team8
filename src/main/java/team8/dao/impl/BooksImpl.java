@@ -79,7 +79,7 @@ public class BooksImpl implements BooksDao {
             ps.execute();
         } catch (Exception e) {
             e.printStackTrace();
-            return "新增失败";
+            return "新增失败,请确认ISBN和书名不存在";
         } finally {
             JDBCUtil.close(rs, ps, connection);
         }

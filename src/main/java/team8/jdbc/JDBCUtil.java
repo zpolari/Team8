@@ -20,7 +20,7 @@ public class JDBCUtil {
 //    static final String USER = "db_ssg_MPM";
 //    static final String PASS = "jHsx2LeRSYk4Zy6W";
 
-    static final String DB_URL = "jdbc:mysql://192.168.16.100:3306/JCGL";
+    static final String DB_URL = "jdbc:mysql://192.168.16.100:3306/JCGL?useUnicode=true&characterEncoding=utf8";
     static final String USER = "root";
     static final String PASS = "root";
 

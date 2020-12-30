@@ -18,7 +18,7 @@ public class Book {
         @Override
         public String toString() {
             return "教科书信息{" +
-                    "\n ISBN=" + ISBN +
+                    "\n ISBN  =  " + ISBN +
                     "\n 教材名  =  " + BName +
                     "\n 作者  =  " + Author +
                     "\n 类型  =  " + Type +

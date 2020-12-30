@@ -17,7 +17,7 @@
         <TextField fx:id="AuthorT" layoutX="139.0" layoutY="181.0" promptText="请输入作者" />
         <TextField fx:id="PublishT" layoutX="139.0" layoutY="251.0" promptText="请输入出版社" />
         <Button fx:id="AddButton" layoutX="370.0" layoutY="317.0" mnemonicParsing="false" onAction="#addTechbook" prefHeight="34.0" prefWidth="171.0" text="新增教科书" />
-        <Label fx:id="MsgLabel" layoutX="369.0" layoutY="302.0" prefHeight="15.0" prefWidth="161.0" />
+        <Label fx:id="MsgLabel" layoutX="300.0" layoutY="283.0" prefHeight="34.0" prefWidth="230.0" />
       <ComboBox fx:id="TypeC" layoutX="375.0" layoutY="181.0" prefHeight="23.0" prefWidth="161.0" />
       <Label layoutX="309.0" layoutY="246.0" prefHeight="34.0" prefWidth="67.0" text="出版时间" />
       <DatePicker fx:id="dateC" layoutX="375.0" layoutY="251.0" prefHeight="23.0" prefWidth="161.0" promptText="yyyy-mm-dd" />
